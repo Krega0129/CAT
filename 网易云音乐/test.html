@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        #box{width: 600px; height: 100px; margin: 100px auto; overflow: hidden; background-color: lightblue;}
+        #out{width: 400px; height: 10px; margin: 44px auto; border: black 1px solid; position: relative; overflow: hidden;}
+        #in{height: 100%; width: 100%; position: absolute; background-image: linear-gradient(to right, blue, lightcoral, red); left: -400px;}
+        #in::after{content: "*"; position: absolute; right: 0;}
+    </style>
+    <script>
+        window.onload=function(){
+            var out = document.getElementById("out");
+            var In = document.getElementById("in");
+            var play = document.getElementById("btn");
+            var pause = document.getElementById("pause");
+            var goOn = document.getElementById("goon");
+            /* 进度条位置 */
+            var indexLeft = null;
+            var timer = null;
+            /* 歌的时间 */
+            var n = 5;
+
+            /* 播放 */
+            play.onclick = function(){
+                clearInterval(timer)
+                indexLeft = -400;
+                timer = setInterval(run, 10);
+            }
+
+            function run(){
+                In.style.left = indexLeft + 'px';
+                indexLeft += 4/n;
+                /* 点击进度条,跳转 */
+                out.onclick = jump;
+                if(indexLeft >= 0){
+                    clearInterval(timer);
+                }
+            }
+            /* 进度条跳转 */
+            function jump(ev){
+                var e = ev || window.event;
+                var toLeft = e.clientX - out.offsetLeft;
+                indexLeft = toLeft - 400;
+                In.style.left = indexLeft + 'px';
+            }
+            /* 暂停 */
+            pause.onclick = function(){
+                clearInterval(timer);
+            }
+            /* 继续播放 */
+            goOn.onclick = function(){
+                timer = setInterval(run, 10);
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div id="box">
+        <div id="out">
+            <div id="in"></div>
+        </div>
+        
+    </div>
+    <button id="btn">播放</button>
+    <button id="pause">暂停</button>
+    <button id="goon">继续</button>
+</body>
+</html>
