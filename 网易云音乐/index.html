@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    <div id="head_logo_box">
+        <div class="logo_box">
+            <div class="head_logo"></div>
+        </div>
+    </div>
     <div id="head" class="container_fluid">
         <div class="head_nav">
-            <div class="head_logo"></div>
             <ul class="head_menu">
                 <li class="active">
                     <a href="#">发现音乐</a>
@@ -30,23 +34,52 @@
                     <a href="#">下载客户端</a>
                 </li>
             </ul>
-            <input type="text" id="search" placeholder="音乐/视频/电台/用户">
+            <div class="inp">
+                <input type="text" id="search" placeholder="音乐/视频/电台/用户">
+                <div class="search_box">
+                    <dl class="search_list">
+                        <dt>歌手</dt>
+                        <dd></dd>
+                        <dd></dd>
+                        <dd></dd>
+                    </dl>
+                    <dl class="search_list">
+                        <dt>单曲</dt>
+                        <dd></dd>
+                        <dd></dd>
+                    </dl>
+                    <dl class="search_list">
+                        <dt>Mv</dt>
+                        <dd></dd>
+                        <dd></dd>
+                    </dl>
+                </div>
+            </div>
             <div class="cre_center">
                 <a href="#">创造者中心</a>
             </div>
             <span class="login"><a href="#">登录</a></span>
+            <div class="headLogImg">
+                <ul class="user_option_list">
+                    <li class="logout">
+                        <a href="#">
+                            <p>退出登录</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="sec_nav container_fluid">
-        <div class="nav_box container">
-            <ul id="sec_nav_list">
-                <li class="active"><a href="#">推荐</a></li>
-                <li><a href="#">排行榜</a></li>
-                <li><a href="#">歌单</a></li>
-                <li><a href="#">主播电台</a></li>
-                <li><a href="#">歌手</a></li>
-                <li><a href="#">新碟</a></li>
-            </ul>
+        <div class="sec_nav container_fluid">
+            <div class="nav_box container">
+                <ul id="sec_nav_list">
+                    <li class="active"><a href="#">推荐</a></li>
+                    <li><a href="#">排行榜</a></li>
+                    <li><a href="#">歌单</a></li>
+                    <li><a href="#">主播电台</a></li>
+                    <li><a href="#">歌手</a></li>
+                    <li><a href="#">新碟</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div id="change_color">换肤
@@ -90,710 +123,712 @@
             <ol id="btn_list">
                 <li class="active"></li>
             </ol>
-            <div class="app">
-                <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
-                <div class="download"><a href="#"></a></div>
-            </div>
             <div id="Lbtn" class="btn"></div>
             <div id="Rbtn" class="btn"></div>
         </div>
     </div>
-    <div id="main" class="container">
-        <div class="l_main">
-            <div class="hot common_box">
-                <div class="hot_head common_head clear">
-                    <b class="l"><a href="#">热门推荐</a></b>
-                    <ul class="hot_head_list l">
-                        <li><a href="#">华语</a></li>
-                        <li><a href="#">流行</a></li>
-                        <li><a href="#">摇滚</a></li>
-                        <li><a href="#">民谣</a></li>
-                        <li><a href="#">电子</a></li>
-                    </ul>
-                    <span class="r"><a href="#">更多</a></span>
-                </div>
-                <ul class="hot_list">
-                    <li>
-                        <div class="hot_box">
-                            <div class="box_img"></div>
-                            <div class="listener">
-                                <i class="earphone"></i>
-                                <span class="num">4316万</span>
-                                <a href="#" class="play r"></a>
-                            </div>
-                            <p><a href="#">[一周日语上新] 浪配最新单曲 让我的歌声成为你的光</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="hot_box">
-                            <div class="box_img"></div>
-                            <div class="listener">
-                                <i class="earphone"></i>
-                                <span class="num">4316万</span>
-                                <a href="#" class="play r"></a>
-                            </div>
-                            <p><a href="#">[一周日语上新] 浪配最新单曲 让我的歌声成为你的光</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="hot_box">
-                            <div class="box_img"></div>
-                            <div class="listener">
-                                <i class="earphone"></i>
-                                <span class="num">4316万</span>
-                                <a href="#" class="play r"></a>
-                            </div>
-                            <p><a href="#">[一周日语上新] 浪配最新单曲 让我的歌声成为你的光</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="hot_box">
-                            <div class="box_img"></div>
-                            <div class="listener">
-                                <i class="earphone"></i>
-                                <span class="num">4316万</span>
-                                <a href="#" class="play r"></a>
-                            </div>
-                            <p><a href="#">[一周日语上新] 浪配最新单曲 让我的歌声成为你的光</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="hot_box">
-                            <div class="box_img"></div>
-                            <div class="listener">
-                                <i class="earphone"></i>
-                                <span class="num">4316万</span>
-                                <a href="#" class="play r"></a>
-                            </div>
-                            <p><a href="#">[一周日语上新] 浪配最新单曲 让我的歌声成为你的光</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="hot_box">
-                            <div class="box_img"></div>
-                            <div class="listener">
-                                <i class="earphone"></i>
-                                <span class="num">4316万</span>
-                                <a href="#" class="play r"></a>
-                            </div>
-                            <p><a href="#">[一周日语上新] 浪配最新单曲 让我的歌声成为你的光</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="hot_box">
-                            <div class="box_img"></div>
-                            <div class="listener">
-                                <i class="earphone"></i>
-                                <span class="num">4316万</span>
-                                <a href="#" class="play r"></a>
-                            </div>
-                            <p><a href="#">[一周日语上新] 浪配最新单曲 让我的歌声成为你的光</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="hot_box">
-                            <div class="box_img"></div>
-                            <div class="listener">
-                                <i class="earphone"></i>
-                                <span class="num">4316万</span>
-                                <a href="#" class="play r"></a>
-                            </div>
-                            <p><a href="#">[一周日语上新] 浪配最新单曲 让我的歌声成为你的光</a></p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="new common_box">
-                <div class="new_head common_head">
-                    <b class="l"><a href="#">新碟上架</a></b>
-                    <span class="r"><a href="#">更多</a></span>
-                </div>
-                <div class="new_box">
-                    <ul id="new_list">
-                        <li class="l">
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                        </li>
-                        <li class="l">
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                        </li>
-                        <li class="l">
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                        </li>
-                        <li class="l">
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                            <div class="list_box">
-                                <div class="img"></div>
-                                <p><a href="">我们的乐队 第5期</a></p>
-                                <span><a href="">我们的乐队</a></span>
-                            </div>
-                        </li>
-                    </ul>
-                    <div id="new_Lbtn">&lt;</div>
-                    <div id="new_Rbtn">&gt;</div>
-                </div>
-            </div>
-            <div class="top common_box">
-                <div class="common_head">
-                    <b class="l"><a href="#">榜单</a></b>
-                    <span class="r"><a href="#">更多</a></span>
-                </div>
-                <div class="top_box">
-                    <dl class="top_list">
-                        <dt>
-                            <img src="" alt="">
-                            <div class="top_title">
-                                <b><a href="">云音乐飙升榜</a></b>
-                                <span></span>
-                                <i></i>
-                            </div>
-                        </dt>
-                        <dd>
-                            <p class="l">
-                                <span class="red">1</span>
-                                <a href="" class="name">纸船</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span class="red">2</span>
-                                <a href="" class="name">小丑女</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span class="red">3</span>
-                                <a href="" class="name">达拉崩吧</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>4</span>
-                                <a href="" class="name">过活</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>5</span>
-                                <a href="" class="name">我不知道</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>6</span>
-                                <a href="" class="name">朋友请听好(易烊千玺版)</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>7</span>
-                                <a href="" class="name">有一件美好的事情将要发生</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>8</span>
-                                <a href="" class="name">治郁</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>9</span>
-                                <a href="" class="name">没有你的日子</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>10</span>
-                                <a href="" class="name">无问(live)</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <a href="" class="all r">查看全部&gt;</a>
-                        </dd>
-                    </dl>
-                    <dl class="top_list">
-                        <dt>
-                            <img src="" alt="">
-                            <div class="top_title">
-                                <b><a href="">云音乐飙升榜</a></b>
-                                <span></span>
-                                <i></i>
-                            </div>
-                        </dt>
-                        <dd>
-                            <p class="l">
-                                <span class="red">1</span>
-                                <a href="" class="name">纸船</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span class="red">2</span>
-                                <a href="" class="name">小丑女</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span class="red">3</span>
-                                <a href="" class="name">达拉崩吧</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>4</span>
-                                <a href="" class="name">过活</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>5</span>
-                                <a href="" class="name">我不知道</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>6</span>
-                                <a href="" class="name">朋友请听好(易烊千玺版)</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>7</span>
-                                <a href="" class="name">有一件美好的事情将要发生</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>8</span>
-                                <a href="" class="name">治郁</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>9</span>
-                                <a href="" class="name">没有你的日子</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>10</span>
-                                <a href="" class="name">无问(live)</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <a href="" class="all r">查看全部&gt;</a>
-                        </dd>
-                    </dl>
-                    <dl class="top_list">
-                        <dt>
-                            <img src="" alt="">
-                            <div class="top_title">
-                                <b><a href="">云音乐飙升榜</a></b>
-                                <span></span>
-                                <i></i>
-                            </div>
-                        </dt>
-                        <dd>
-                            <p class="l">
-                                <span class="red">1</span>
-                                <a href="" class="name">纸船</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span class="red">2</span>
-                                <a href="" class="name">小丑女</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span class="red">3</span>
-                                <a href="" class="name">达拉崩吧</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>4</span>
-                                <a href="" class="name">过活</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>5</span>
-                                <a href="" class="name">我不知道</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>6</span>
-                                <a href="" class="name">朋友请听好(易烊千玺版)</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>7</span>
-                                <a href="" class="name">有一件美好的事情将要发生</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>8</span>
-                                <a href="" class="name">治郁</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>9</span>
-                                <a href="" class="name">没有你的日子</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <p class="l">
-                                <span>10</span>
-                                <a href="" class="name">无问(live)</a>
-                            </p>
-                            <div class="func r">
-                                <a href=""></a>
-                                <a href=""></a>
-                                <a href=""></a>
-                            </div>
-                        </dd>
-                        <dd>
-                            <a href="" class="all r">查看全部&gt;</a>
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-        </div>
-        <div class="r_main">
-            <div class="login">
-                <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
-                <a href=""><div class="login_btn">用户登录</div></a>
-            </div>
-            <div class="singer">
-                <div class="singer_box com_box">
-                    <div class="r_main_head">
-                        <b>入驻歌手</b>
-                        <a href="" class="r">查看全部&gt;</a>
+    <div id="main_bg" class="container_fluid">
+        <div id="main" class="container">
+            <div class="l_main">
+                <div class="hot common_box">
+                    <div class="hot_head common_head clear">
+                        <b class="l"><a href="#">热门推荐</a></b>
+                        <ul class="hot_head_list l">
+                            <li><a href="#">华语</a></li>
+                            <li><a href="#">流行</a></li>
+                            <li><a href="#">摇滚</a></li>
+                            <li><a href="#">民谣</a></li>
+                            <li><a href="#">电子</a></li>
+                        </ul>
+                        <span class="r"><a href="#">更多</a></span>
                     </div>
-                    <ul class="singer_list">
+                    <ul class="hot_list" id="hotList">
                         <li>
-                            <div class="pic"></div>
-                            <div class="info">
-                                <b>张惠妹aMEI</b>
-                                <p>台湾歌手张惠妹</p>
+                            <div class="hot_box">
+                                <div class="img_box">
+                                    <div class="box_img"></div>
+                                </div>
+                                <div class="listener">
+                                    <i class="earphone"></i>
+                                    <span class="num">4316万</span>
+                                    <i href="#" class="play r"></i>
+                                </div>
+                                <p><a href="#">Someone You Loved - Lewis Capaldi</a></p>
                             </div>
                         </li>
                         <li>
-                            <div class="pic"></div>
-                            <div class="info">
-                                <b>张惠妹aMEI</b>
-                                <p>台湾歌手张惠妹</p>
+                            <div class="hot_box">
+                                <div class="img_box">
+                                    <div class="box_img"></div>
+                                </div>
+                                <div class="listener">
+                                    <i class="earphone"></i>
+                                    <span class="num">4316万</span>
+                                    <i href="#" class="play r"></i>
+                                </div>
+                                <p><a href="#">苦瓜 - 陈奕迅</a></p>
                             </div>
                         </li>
                         <li>
-                            <div class="pic"></div>
-                            <div class="info">
-                                <b>张惠妹aMEI</b>
-                                <p>台湾歌手张惠妹</p>
+                            <div class="hot_box">
+                                <div class="img_box">
+                                    <div class="box_img"></div>
+                                </div>
+                                <div class="listener">
+                                    <i class="earphone"></i>
+                                    <span class="num">4316万</span>
+                                    <i href="#" class="play r"></i>
+                                </div>
+                                <p><a href="#">Dancing With Your Ghost - Sasha Sloan</a></p>
                             </div>
                         </li>
                         <li>
-                            <div class="pic"></div>
-                            <div class="info">
-                                <b>张惠妹aMEI</b>
-                                <p>台湾歌手张惠妹</p>
+                            <div class="hot_box">
+                                <div class="img_box">
+                                    <div class="box_img"></div>
+                                </div>
+                                <div class="listener">
+                                    <i class="earphone"></i>
+                                    <span class="num">4316万</span>
+                                    <i href="#" class="play r"></i>
+                                </div>
+                                <p><a href="#">我不是你的宋冬野 - 林啟得</a></p>
                             </div>
                         </li>
                         <li>
-                            <div class="pic"></div>
-                            <div class="info">
-                                <b>张惠妹aMEI</b>
-                                <p>台湾歌手张惠妹</p>
+                            <div class="hot_box">
+                                <div class="img_box">
+                                    <div class="box_img"></div>
+                                </div>
+                                <div class="listener">
+                                    <i class="earphone"></i>
+                                    <span class="num">4316万</span>
+                                    <i href="#" class="play r"></i>
+                                </div>
+                                <p><a href="#">Musical Fiction - Rudy Mancuso</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hot_box">
+                                <div class="img_box">
+                                    <div class="box_img"></div>
+                                </div>
+                                <div class="listener">
+                                    <i class="earphone"></i>
+                                    <span class="num">4316万</span>
+                                    <i href="#" class="play r"></i>
+                                </div>
+                                <p><a href="#">风继续吹(Live) - 张国荣</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hot_box">
+                                <div class="img_box">
+                                    <div class="box_img"></div>
+                                </div>
+                                <div class="listener">
+                                    <i class="earphone"></i>
+                                    <span class="num">4316万</span>
+                                    <i href="#" class="play r"></i>
+                                </div>
+                                <p><a href="#">灰色轨迹 - Beyond</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hot_box">
+                                <div class="img_box">
+                                    <div class="box_img"></div>
+                                </div>
+                                <div class="listener">
+                                    <i class="earphone"></i>
+                                    <span class="num">4316万</span>
+                                    <i href="#" class="play r"></i>
+                                </div>
+                                <p><a href="#">Monster - Imagine Dragons</a></p>
                             </div>
                         </li>
                     </ul>
-                    <a href="" class="beSinger"><div class="apply"><b>申请成为网易音乐人</b></div></a>
+                </div>
+                <div class="singers common_box">
+                    <div class="common_head">
+                        <b class="l"><a href="#">推荐歌手</a></b>
+                        <ul id="singersList" class="hot_head_list l">
+                            <li>华语</li>
+                            <li>欧美</li>
+                            <li>日韩</li>
+                            <li>组合</li>
+                        </ul>
+                        <span class="r"><a href="#">更多</a></span>
+                    </div>
+                    <div class="singers_box">
+                        <ul id="singers_list">
+                            <li class="l">
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">周杰伦</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">薛之谦</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">毛不易</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">陈奕迅</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">林俊杰</a></p>
+                                </div>
+                            </li>
+                            <li class="l">
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">Tylor Swift</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">Justin Bieber</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">Michael Jackson</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">Kelly Clarkson</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">Charlie Puth</a></p>
+                                </div>
+                            </li>
+                            <li class="l">
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">高黎康治</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">G-Dragon</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">IU</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">蔡妍</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">Psy</a></p>
+                                </div>
+                            </li>
+                            <li class="l">
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">Beyond</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">Westlife</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">Imagine Dragons</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">五月天</a></p>
+                                </div>
+                                <div class="list_box">
+                                    <div class="img"></div>
+                                    <p><a href="">Maroon 5</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top common_box">
+                    <div class="common_head">
+                        <b class="l"><a href="#">榜单</a></b>
+                        <span class="r"><a href="#">更多</a></span>
+                    </div>
+                    <div class="top_box">
+                        <dl class="top_list top_list1">
+                            <dt>
+                                <div class="topImg"></div>
+                                <div class="top_title">
+                                    <b><a class="topName" href=""></a></b>
+                                </div>
+                            </dt>
+                            <dd>
+                                <p class="l">
+                                    <span class="red">1</span>
+                                    <a href="#" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span class="red">2</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span class="red">3</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>4</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>5</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>6</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>7</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>8</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>9</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>10</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <a href="" class="all r">查看全部&gt;</a>
+                            </dd>
+                        </dl>
+                        <dl class="top_list top_list2">
+                            <dt>
+                                <div class="topImg"></div>
+                                <div class="top_title">
+                                    <b><a class="topName" href=""></a></b>
+                                </div>
+                            </dt>
+                            <dd>
+                                <p class="l">
+                                    <span class="red">1</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span class="red">2</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span class="red">3</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>4</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>5</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>6</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>7</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>8</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>9</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>10</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <a href="" class="all r">查看全部&gt;</a>
+                            </dd>
+                        </dl>
+                        <dl class="top_list top_list3">
+                            <dt>
+                                <div class="topImg"></div>
+                                <div class="top_title">
+                                    <b><a class="topName" href=""></a></b>
+                                </div>
+                            </dt>
+                            <dd>
+                                <p class="l">
+                                    <span class="red">1</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span class="red">2</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span class="red">3</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>4</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>5</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>6</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>7</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>8</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>9</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="l">
+                                    <span>10</span>
+                                    <a href="" class="name"></a>
+                                </p>
+                                <div class="func r">
+                                    <a class="play"></a>
+                                    <a href=""></a>
+                                    <a href=""></a>
+                                </div>
+                            </dd>
+                            <dd>
+                                <a href="" class="all r">查看全部&gt;</a>
+                            </dd>
+                        </dl>
+                    </div>
                 </div>
             </div>
-            <div class="anchor">
-                <div class="anchor_box com_box">
-                    <div class="r_main_head">
-                        <b>热门主播</b>
+            <div class="r_main">
+                <div class="login">
+                    <div class="before_login">
+                        <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+                        <div id="login_btn">用户登录</div>
                     </div>
-                    <ul class="anchor_list">
-                        <li>
-                            <a href="#"><div class="pic"></div></a>
-                            <div class="info">
-                                <a href="#">陈立</a>
-                                <p>心理学家、美食家陈立教授</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><div class="pic"></div></a>
-                            <div class="info">
-                                <a href="#">陈立</a>
-                                <p>心理学家、美食家陈立教授</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><div class="pic"></div></a>
-                            <div class="info">
-                                <a href="#">陈立</a>
-                                <p>心理学家、美食家陈立教授</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><div class="pic"></div></a>
-                            <div class="info">
-                                <a href="#">陈立</a>
-                                <p>心理学家、美食家陈立教授</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><div class="pic"></div></a>
-                            <div class="info">
-                                <a href="#">陈立</a>
-                                <p>心理学家、美食家陈立教授</p>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="after_login">
+                        <div class="userImg"></div>
+                        <b id="userName"><a href=""></a></b>
+                        <ul class="info_list">
+                            <li>
+                                <a href="">
+                                    <p>动态</p>
+                                    <span>0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p>关注</p>
+                                    <span>0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p>粉丝</p>
+                                    <span>0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="app">
+                    <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+                    <div class="download"><a href="#"></a></div>
+                </div>
+                <div class="Mv">
+                    <div class="Mv_box com_box">
+                        <div class="r_main_head">
+                            <b>推荐Mv</b>
+                            <a href="" class="r">查看全部&gt;</a>
+                        </div>
+                        <ul class="Mv_list">
+                            <li>
+                                <div class="pic"></div>
+                                <div class="details"></div>
+                            </li>
+                            <li>
+                                <div class="pic"></div>
+                                <div class="details"></div>
+                            </li>
+                            <li>
+                                <div class="pic"></div>
+                                <div class="details"></div>
+                            </li>
+                            <li>
+                                <div class="pic"></div>
+                                <div class="details"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="anchor">
+                    <div class="anchor_box com_box">
+                        <div class="r_main_head">
+                            <b>热门主播</b>
+                        </div>
+                        <ul class="anchor_list">
+                            <li>
+                                <a href="#"><div class="pic"></div></a>
+                                <div class="info">
+                                    <a href="#">陈立</a>
+                                    <p>心理学家、美食家陈立教授</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><div class="pic"></div></a>
+                                <div class="info">
+                                    <a href="#">陈立</a>
+                                    <p>心理学家、美食家陈立教授</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><div class="pic"></div></a>
+                                <div class="info">
+                                    <a href="#">陈立</a>
+                                    <p>心理学家、美食家陈立教授</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><div class="pic"></div></a>
+                                <div class="info">
+                                    <a href="#">陈立</a>
+                                    <p>心理学家、美食家陈立教授</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"><div class="pic"></div></a>
+                                <div class="info">
+                                    <a href="#">陈立</a>
+                                    <p>心理学家、美食家陈立教授</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -803,10 +838,10 @@
             <div class="info">
                 <ul class="foot_list">
                     <li><a href="#">服务条款</a></li>
-                    <li><a href="#">服务条款</a></li>
-                    <li><a href="#">服务条款</a></li>
-                    <li><a href="#">服务条款</a></li>
-                    <li><a href="#">服务条款</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                    <li><a href="#">儿童隐私政策</a></li>
+                    <li><a href="#">版权投诉指引</a></li>
+                    <li><a href="#">意见反馈</a></li>
                 </ul>
                 <p><span>网易公司版权所有©1997-2020</span> 杭州乐读科技有限公司运营：<a href="#">浙网文[2018]3506-263号</a></p>
                 <p><span>违法和不良信息举报电话：0571-89853516</span>举报邮箱：<a href="#">ncm5990@163.com</a></p>
@@ -819,15 +854,15 @@
                 </li>
                 <li>
                     <a href="#"><div class="pic"></div></a>
-                    <p>用户认证</p>
+                    <p>独立音乐人</p>
                 </li>
                 <li>
                     <a href="#"><div class="pic"></div></a>
-                    <p>用户认证</p>
+                    <p>赞赏</p>
                 </li>
                 <li>
                     <a href="#"><div class="pic"></div></a>
-                    <p>用户认证</p>
+                    <p>视频奖励</p>
                 </li>
             </ul>
         </div>
@@ -838,6 +873,99 @@
             <p>Top</p>
         </div>
     </a>
+    <div id="login_box">
+        <div id="box_head">
+            <div id="close" class="r">X</div>
+        </div>
+        <div class="box_body">
+            <div id="log_div" class="com_box">
+                <div class="pic"></div>
+                <input type="number" class="inner" id="num_box" placeholder="请输入你的电话">
+                <p id="num_tip">请输入正确的手机号!</p>
+                <div class="passw">
+                    <input type="password" class="inner password" placeholder="请输入你的密码">
+                    <div class="paswicon"></div>
+                </div>
+                <p id="pw_tip">密码错误,请检查后再重试!</p>
+                <input type="checkbox" class="check"><span class="agree">是否同意<a href="">《协议》</a></span>
+                <div id="sub" class="log_btn">登录</div>
+                <span id="beNew" class="r">还没账号?点击注册&gt;&gt;</span>
+            </div>
+            <div id="register" class="com_box">
+                <div class="pic"></div>
+                <input type="text" class="inner" id="tel_reg" placeholder="请输入手机号码">
+                <p id="tel_tip">请输入正确的手机号码！</p>
+                <div class="passw">
+                    <input type="password" class="inner password" id="pw_reg" placeholder="请设置6-16位密码">
+                    <div class="paswicon"></div>
+                </div>
+                <div class="passw">
+                    <input type="password" class="inner password" id="pw_sure" placeholder="请确认你的密码">
+                    <div class="paswicon"></div>
+                </div>
+                <p id="pw_sure_tip">两次输入的密码不一致，请检查后重试！</p>
+                <input type="checkbox" class="check"><span class="agree">是否同意<a href="">《协议》</a></span>
+                <div id="reg_btn" class="log_btn"><a href="#">注册</a></div>
+                <span id="backlog">&lt;&lt;返回登录</span>
+                <!-- <div class="verify">
+                    
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div id="songImg"></div>
+    <div id="music_box" class="container_fluid">
+        <div class="mic_box">
+            <div class="ctrl">
+                <div class="preSong"></div>
+                <div id="pause" class="pause"></div>
+                <div class="nextSong"></div>
+                <audio id="MyAudio" src=""></audio>
+            </div>
+            <div class="progress">
+                <div class="songNameBox">
+                    <div id="songName1">网易云音乐</div>
+                    <div id="songName2" style="left: -600px;">网易云音乐</div>
+                </div>
+                <div class="time">
+                    <span class="curTime_min">00</span>
+                    <b>:</b>
+                    <span class="curTime_sec">00</span>
+                </div>
+                <div class="outPro">
+                    <div class="inbox">
+                        <i class="inPro"></i>
+                        <div class="proPoint"></div>
+                    </div>
+                </div>
+                <div class="time">
+                    <span class="fullTime_min">00</span>
+                    <b>:</b>
+                    <span class="fullTime_sec">00</span>
+                </div>
+            </div>
+            <ul class="musicFuncList">
+                <li>
+                    <span class="volume_pic"></span>
+                    <input type="range" id="volume" max="100" min="0" value="60">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bfq container_fluid">
+        <div id="AudioHtml">
+            <div class="top">
+                <b class="AduioHtmlSongName">网易云音乐</b>
+                <span class="AudioClose r">X</span>
+            </div>
+            <div class="left">
+                <div class="AudioHtmlImg"></div>
+            </div>
+            <div class="right">
+                <div class="lrc"></div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="./js/index.js"></script>
 </html>
