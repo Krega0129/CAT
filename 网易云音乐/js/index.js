@@ -1268,6 +1268,7 @@ firstPage.onclick = function(){
 
 /* 我的音乐页面未登录时的登录按钮 */
 pleaseLoginBtn.onclick = function(){
+    login.style.display = 'block'
     logBox.style.display = "block";
 }
 
