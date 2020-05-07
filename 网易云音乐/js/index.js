@@ -755,7 +755,6 @@ playOrder.onclick = function(){
         playOrder.className = 'order';
     }else if(playOrderValue == 1){
         //单曲循环
-        console.log(playOrderValue);
         MyAudio.loop = 'loop';
         playOrder.className = 'singleCycle';
     }else{
@@ -778,13 +777,18 @@ preSong.onclick = function(){
 }
 
 /* 下一首 */
-nextSong.onclick = playNext;
+nextSong.onclick = function(){
+    if(playOrderValue == 0 || playOrderValue == 1){
+        playNext();
+    }else{
+        playRandom();
+    }
+}
 
 function playPreSong(){
     do{
         playIndex = (--playIndex < 0) ? musicList.length - 1 : playIndex;
     }while(checkMusic(musicList[playIndex]))
-    
     playSong(musicList[playIndex]);
 }
 
