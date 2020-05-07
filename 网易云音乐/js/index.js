@@ -278,9 +278,11 @@ logBoxHead.onmousedown = function(ev){
 var visible = [false,false,false];
 /* 打开登录界面 */
 logBtn.onclick = function(){
+    login.style.display = 'block'
     logBox.style.display = "block";
 }
 headLoginBtn.onclick = function(){
+    login.style.display = 'block'
     logBox.style.display = "block";
 }
 
