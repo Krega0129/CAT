@@ -2,7 +2,7 @@
 a{text-decoration: none; color: white;}
 img{display: block;}
 ul,ol{list-style: none;}
-body{font-family: Arial, Helvetica, sans-serif; background: linear-gradient(to right, #141e30, #243b55);}
+body{font-family: Arial, Helvetica, sans-serif; background: linear-gradient(to right, #141e30, #243b55)}
 
 .l{float: left;}
 .r{float: right;}
@@ -13,55 +13,72 @@ body{font-family: Arial, Helvetica, sans-serif; background: linear-gradient(to r
 /* 导航栏 */
 #head{background: #242424; font-size: 14px; transition: .5s; transform: translateY(-112px); position: fixed; top: 0; z-index: 2;}
 #head a{color: white;}
-#head_logo_box{width: 1172px; margin: 0 auto; position: relative; background: linear-gradient(to right, #3a6186, #89253e);}
+#head_logo_box{width: 1172px; margin: 0 auto; position: relative;}
 #head_logo_box .logo_box{width: 187px; height: 75px; position: fixed; top: 0; background: #3a6186; overflow: hidden; z-index: 5;}
 .head_logo{width: 157px; height: 75px; background-image: url(../img/topbar.png); background-position: 0 0; margin: 0 15px 10px 15px;}
-#head .head_nav{width: 1172px; height: 65px; margin: 0 auto; display: flex; justify-content: space-between; position: relative;}
+#head .head_nav{width: 1172px; height: 65px; margin: 0 auto; display: flex; justify-content: space-between; position: relative; text-align: center;}
 #head .head_nav .head_menu{margin-left: 200px; display: flex; height: 100%;}
-#head .head_nav .head_menu li{box-sizing: border-box; font-size: 15px; padding: 15px 20px; text-align: center; line-height: 35px;}
+#head .head_nav .head_menu li{box-sizing: border-box; position: relative; font-size: 15px; padding: 15px 20px; line-height: 35px;}
+#head .head_nav .head_menu li a{display: block; width: 100%; height: 100%;}
 #head .head_nav .head_menu li.active{background: black;}
 #head .head_nav .head_menu li:hover{background: black;}
+#head .head_nav .head_menu li.active::after{content: "▲"; color: rgb(105, 156, 173); position: absolute; top: 45px; left: 50%; margin-left: -8px;}
 #head .head_nav .inp{width: 173px; height: 33px;}
 #head .head_nav input{display: block; border: none; width: 173px; height: 33px; border-radius: 18px; outline: none; margin-top: 20px; background-image: url(../img/topbar.png); background-position: 0 115px; padding-left: 28px; box-sizing: border-box;}
 #head .head_nav input::placeholder{color: #999999;}
-#head .head_nav .inp .search_box{width: 100%; background: wheat; height: 146px; display: none;}
+#head .head_nav .inp .search_box{width: 100%; background: white; height: 160px; display: none;}
 #head .head_nav .inp .search_box dl{width: 100%;}
-#head .head_nav .inp .search_box dl dt{width: 50px; height: 40px; border: 1px solid black; line-height: 40px; text-align: center; float: left;}
+#head .head_nav .inp .search_box dl a{color: black;}
+#head .head_nav .inp .search_box dl:first-of-type dt, .search_box dl:first-of-type dd{background: gainsboro;}
+#head .head_nav .inp .search_box dl:last-of-type dt, .search_box dl:last-of-type dd{background: gainsboro;}
+#head .head_nav .inp .search_box dl:first-of-type dd:hover,.search_box dl:last-of-type dd:hover{background: white;}
+#head .head_nav .inp .search_box dl:nth-of-type(2) dd:hover{background: gainsboro;}
+#head .head_nav .inp .search_box dl dt{width: 50px; height: 40px; line-height: 40px; border-right: 1px solid grey; float: left;}
 #head .head_nav .inp .search_box dl:first-of-type dt{height: 60px; line-height: 60px;}
-#head .head_nav .inp .search_box dl dd{width: 120px; height: 20px; border-bottom: 1px solid black; line-height: 20px; float: right;}
-#head .head_nav .cre_center{width: 95px; height: 32px; border-radius: 16px; border: 2px solid #515151; line-height: 32px; text-align: center; margin-top: 20px;}
+#head .head_nav .inp .search_box dl dd{width: 122px; height: 20px; line-height: 20px; float: right; text-align: left; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+#head .head_nav .inp .search_box #searchSong{width: 100%; height: 20px; background: white; line-height: 20px; cursor: pointer;}
+#head .head_nav .inp .search_box #searchSong:hover{background: gainsboro;}
+#head .head_nav .cre_center{width: 95px; height: 32px; border-radius: 16px; border: 2px solid #515151; line-height: 32px; margin-top: 20px;}
 #head .head_nav .cre_center a{display: block; width: 100%; height: 100%;}
 #head .head_nav .cre_center:hover{border: 2px solid #999999;}
-#head .head_nav .login{margin-top: 30px;}
-#head .head_nav .login a{color: #717171;}
+#head .head_nav .login{margin-top: 30px; color: #717171; cursor: pointer;}
 #head .head_nav .headLogImg{width: 50px; height: 50px; border-radius: 50%; position: absolute; top: 10px; right: -2px; z-index: 100; display: none;}
-#head .head_nav .headLogImg .user_option_list{width: 100px; position: absolute; top: 50px;}
-#head .head_nav .headLogImg .user_option_list:hover{display: block;}
-#head .head_nav .headLogImg .user_option_list li{width: 100%; height: 20px; background: white;}
-#head .head_nav .headLogImg .user_option_list li a{color: black;}
-#head .head_nav .headLogImg .user_option_list li a p{text-align: center;}
 
 /* 二级导航 */
-.sec_nav{background: #c20c0c; height: 36px;}
+.sec_nav{background: rgb(105, 156, 173); height: 36px;}
 .sec_nav a{color: white;}
 .sec_nav .nav_box{position: relative; min-width: 1172px;}
-.sec_nav .nav_box #sec_nav_list{width: 580px; height: 100%; display: flex; justify-content: space-between; position: absolute; left: 50%; margin-left: -360px;}
+.sec_nav .nav_box #sec_nav_list{width: 560px; height: 100%; display: flex; justify-content: space-between; position: absolute; left: 50%; margin-left: -360px;}
 .sec_nav .nav_box #sec_nav_list li{height: 20px; padding: 0 10px; line-height: 20px; font-size: 14px; border-radius: 10px; margin-top: 8px; position: relative;}
-.sec_nav .nav_box #sec_nav_list li.active{background: #9b0909;}
-.sec_nav .nav_box #sec_nav_list li:hover{background: #9b0909;}
-.sec_nav .nav_box #sec_nav_list::before{content: "▲"; color: #c20c0c; position: absolute; top: -12px; left: 22px;}
+.sec_nav .nav_box #sec_nav_list li.active{background: #203a43;}
+.sec_nav .nav_box #sec_nav_list li:hover{background: #203a43;}
 
 /* 换肤 */
-#change_color{width: 50px; height: 20px; text-align: center; background: #eaeaea; color: black; border: 1px solid #999999; margin-top: 28px; position: fixed; right: 20px; bottom: 20px;}
-#color_list{width: 50px; height: 60px; background: #eaeaea; position: absolute; top: -60px; display: none;}
-#color_list li{width: 100%; height: 20px; line-height: 20px; text-align: center; cursor: pointer; cursor: pointer;}
-#change_color:hover ul{display: block;}
-#color_list li:nth-of-type(1){color: #242424;}
-#color_list li:nth-of-type(2){color: #06a6f0;}
-#color_list li:nth-of-type(3){color: #ee7cd2;}
-#color_list li:nth-of-type(1):hover{background-color: #242424; color: white;}
-#color_list li:nth-of-type(2):hover{background-color: #06a6f0; color: white;}
-#color_list li:nth-of-type(3):hover{background-color: #ee7cd2; color: white;}
+#change_color{width: 50px; height: 50px; border-radius: 50%; line-height: 50px; text-align: center; background: #eaeaea; color: black; border: 1px solid #999999; margin-top: 28px; position: fixed; right: 120px; bottom: 50px; cursor: pointer; z-index: 20;}
+#color_list{width: 50px; position: absolute; top: 0; display: none;}
+#color_list li{width: 100%; height: 50px; line-height: 50px; animation-fill-mode: forwards; text-align: center; border-radius: 50%; cursor: pointer; background: #eaeaea; transition: 1s; transform: translate(0,0,0); position: absolute; top: 0;}
+#change_color:hover ul{display: block; font-size: 12px; font-weight: bold; border-radius: 5px;}
+#color_list li:nth-of-type(1){color: #141e30;}
+#color_list li:nth-of-type(2){color: #1f1c2c;}
+#color_list li:nth-of-type(3){color: #203a43;}
+#change_color:hover #color_list li:nth-of-type(1){animation: toLeft 1s; animation-fill-mode: forwards;}
+#change_color:hover #color_list li:nth-of-type(2){animation: toTop 1s; animation-fill-mode: forwards;}
+#change_color:hover #color_list li:nth-of-type(3){animation: toRight 1s; animation-fill-mode: forwards;}
+#color_list li:nth-of-type(1):hover{background-color: #141e30; color: white;}
+#color_list li:nth-of-type(2):hover{background-color: #1f1c2c; color: white;}
+#color_list li:nth-of-type(3):hover{background-color: #203a43; color: white;}
+@keyframes toLeft{
+    0%{transform: translateX(0);}
+    100%{transform: translate(-44px,-26px);}
+}
+@keyframes toTop{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-50px);}
+}
+@keyframes toRight{
+    0%{transform: translateX(0);}
+    100%{transform: translate(44px,-26px);}
+}
 
 /* 轮播图 */
 #banner{height: 800px; background-image: url(../img/banner1-bg.jpg); background-size: cover; position: fixed; top: 0px; z-index: -2;}
@@ -71,8 +88,8 @@ body{font-family: Arial, Helvetica, sans-serif; background: linear-gradient(to r
 #banner .banner_box #banner_list li img{width: 100%; height: 100%;}
 #banner .banner_box #banner_list li.active{opacity: 1; transition: 1s;}
 #banner .banner_box #btn_list{font-size: 0; display: inline-block; width: 970px; position: absolute; bottom: 240px;}
-#banner .banner_box #btn_list li{width: 50px; height: 15px; margin: 3px 10px; display: inline-block; border-radius: 5px; background: rgb(86, 93, 95); cursor: pointer;}
-#banner .banner_box #btn_list li.active{background-color: rgb(133, 188, 240); background-size: 50px 15px; background-position-x: 20px;}
+#banner .banner_box #btn_list li{width: 50px; height: 15px; margin: 3px 10px; display: inline-block; border-radius: 10px; background: rgb(86, 93, 95); cursor: pointer;}
+#banner .banner_box #btn_list li.active{background-color: rgb(133, 188, 240);}
 #banner .banner_box #btn_list li:hover{background-color: rgb(133, 188, 240);}
 #banner .banner_box .btn{width: 39px; height: 70px; background: url(../img/banner.png); position: absolute; top: 280px; cursor: pointer;}
 #banner .banner_box #Lbtn{background-position: 0 -360px; left: -60px;}
@@ -80,30 +97,34 @@ body{font-family: Arial, Helvetica, sans-serif; background: linear-gradient(to r
 #banner .banner_box #Lbtn:hover{background-position: 0 -430px;}
 #banner .banner_box #Rbtn:hover{background-position: 0 -578px;}
 
+/* 主体内容 */
 #main_bg{background: linear-gradient(to right, #141e30, #243b55); min-width: 1200px;}
 #main{border-left: 2px solid lightblue; border-right: 2px solid lightblue; display: flex; flex-wrap: wrap;}
+/* 左边主体部分 */
 #main .l_main{width: 724px; border-right: 2px solid lightblue; padding-bottom: 40px;}
 #main .l_main a:hover{text-decoration: underline;}
 #main .l_main .common_box{width: 724px; box-sizing: border-box; padding: 0 20px;}
-#main .l_main .common_box .common_head{width: 684px; height: 52px; overflow: hidden; border-bottom: 3px solid red; box-sizing: border-box; padding-top: 16px;}
+#main .l_main .common_box .common_head{width: 684px; height: 52px; overflow: hidden; border-bottom: 3px solid lightblue; box-sizing: border-box; padding-top: 16px;}
 #main .l_main .common_box .common_head b{font-size: 20px; line-height: 30px;}
 #main .l_main .hot_head_list{display: flex; width: 265px; color: #7e7e7e;}
 #main .l_main .hot_head_list li{width: 53px; height: 20px; margin-top: 4px; text-align: center; line-height: 20px; font-size: 12px; cursor: pointer;}
 #main .l_main .hot_head_list li a{color: #7e7e7e;}
 #main .l_main .hot_head_list li:not(:last-child)::after{content: "|"; position: relative; left: 14px; top: -1px;}
 #main .l_main .common_box .common_head span{font-size: 12px;}
-
+/* 热门推荐 */
 #main .l_main .hot .hot_list{width: 684px; display: flex; justify-content: space-between; flex-wrap: wrap;}
 #main .l_main .hot .hot_list li{width: 138px; height: 210px; position: relative; margin-top: 20px;}
 #main .l_main .hot .hot_list li .hot_box{width: 100%; height: 138px;}
-#main .l_main .hot .hot_list li .hot_box .img_box{width: 100%; height: 100%; background-image: url(../img/default_album.jpg); background-size: 138px 138px;}
+#main .l_main .hot .hot_list li .hot_box .img_box{width: 100%; height: 100%; cursor: pointer; background-image: url(../img/default_album.jpg); background-size: 138px 138px;}
 #main .l_main .hot .hot_list li .hot_box .img_box .box_img{width: 100%; height: 100%; background-size: 138px 138px; opacity: .5;}
+#main .l_main .hot .hot_list li .hot_box:hover .img_box .box_img{opacity: 1;}
 #main .l_main .hot .hot_list li .listener{width: 100%; height: 26px; background: rgba(0, 0, 0, .4); position: absolute; top: 112px;}
 #main .l_main .hot .hot_list li .listener .earphone{display: inline-block; width: 14px; height: 11px; background: url(../img/iconall.png); background-position: 0 -24px; margin: 7px 6px;}
 #main .l_main .hot .hot_list li .listener span{line-height: 26px; font-size: 12px; color: #7e7e7e; position: absolute; top: 0px;}
-#main .l_main .hot .hot_list li .listener .play{cursor: pointer; display: inline-block; width: 16px; height: 17px; background: url(../img/iconall.png); background-position: 0 0; margin: 4px 10px;}
+#main .l_main .hot .hot_list li .listener .play{cursor: pointer; border-radius: 50%; display: inline-block; width: 16px; height: 16px; background: url(../img/iconall.png); background-position: 0 0; margin: 4px 10px;}
+#main .l_main .hot .hot_list li .listener .play:hover{box-shadow: 0 0 10px white;}
 #main .l_main .hot .hot_list li p{font-size: 14px; line-height: 18px; margin-top: 5px;}
-
+/* 推荐歌手 */
 #main .l_main .singers .singers_box{width: 682px; height: 184px; background: #3a6186; border: 1px solid #7e7e7e; overflow: hidden; position: relative; margin-top: 20px;}
 #main .l_main .singers .singers_box #singers_list{width: 2617.5px; height: 182px; position: absolute; left: 0; margin: 29px 0 0 28px;display: flex; justify-content: space-between;}
 #main .l_main .singers .singers_box #singers_list li{width: 630px; height: 150px; display: flex; justify-content: space-between; text-align: center;}
@@ -111,9 +132,9 @@ body{font-family: Arial, Helvetica, sans-serif; background: linear-gradient(to r
 #main .l_main .singers .singers_box #singers_list li .list_box:hover{width: 100px; height: 120px; transform: scale(1.05);}
 #main .l_main .singers .singers_box #singers_list li .list_box .img{width: 100px; height: 100px; border-radius: 50%; cursor: pointer;}
 #main .l_main .singers .singers_box #singers_list li .list_box p{font-size: 16px; margin-top: 10px;}
-
+/* 排行榜 */
 #main .l_main .top .top_box{width: 682px; height: 466px; background-size: 683px 466px; overflow: hidden; margin-top: 20px; display: flex;}
-#main .l_main .top .top_box .top_list{width: 217px; height: 100%; background: #3a6186; margin: 0 5px;}
+#main .l_main .top .top_box .top_list{width: 217px; height: 100%; background: #3a6186; margin: 0 5px; color: white;}
 #main .l_main .top .top_box .top_list dt{width: 100%; height: 118px; display: flex;}
 #main .l_main .top .top_box .top_list dt .topImg{width: 80px; height: 80px; margin: 20px 0 0 20px; border-radius: 20px 0;}
 #main .l_main .top .top_box .top_list dt .top_title{width: 100px; margin: 50px 0 0 10px;}
@@ -124,7 +145,7 @@ body{font-family: Arial, Helvetica, sans-serif; background: linear-gradient(to r
 #main .l_main .top .top_box .top_list dd p .name{margin-left: 12px; font-size: 12px;}
 #main .l_main .top .top_box .top_list dd .func{width: 80px; height: 100%; display: none;}
 #main .l_main .top .top_box .top_list dd .func a{display: inline-block; width: 17px; height: 17px; background: url(../img/icon.png); margin: 9px 6px 0 0;}
-#main .l_main .top .top_box .top_list dd .func a:nth-of-type(1){background: url(../img/index.png); background-position: -267px -268px; position: relative; top: -2px;}
+#main .l_main .top .top_box .top_list dd .func a:nth-of-type(1){background: url(../img/index.png); background-position: -267px -268px; position: relative; top: -2px; cursor: pointer;}
 #main .l_main .top .top_box .top_list dd .func a:nth-of-type(2){background-position: 0 -700px;}
 #main .l_main .top .top_box .top_list dd .func a:nth-of-type(3){background-position: -45px -87px;}
 #main .l_main .top .top_box .top_list dd .func a:nth-of-type(1):hover{background-position: -267px -288px;}
@@ -135,45 +156,51 @@ body{font-family: Arial, Helvetica, sans-serif; background: linear-gradient(to r
 #main .l_main .top .top_box .top_list dd:hover p{width: 126px;}
 #main .l_main .top .top_box .top_list dd:hover p a{color: black;}
 #main .l_main .top .top_box .top_list dd:hover .func{display: block;}
-
+/* 右边主体部分 */
 #main .r_main{width: 244px;}
+#main .r_main b{color: white;}
+/* 登录 */
 #main .r_main .login{position: relative; width: 100%;}
 #main .r_main .login .before_login{width: 244px; margin: 1px; height: 120px; overflow: hidden;  font-size: 12px;}
 #main .r_main .login .before_login p{width: 202px; line-height: 22px; color: white; margin: 15px 20px;}
 #main .r_main .login .before_login #login_btn{width: 100px; height: 30px; border-radius: 5px; background: #d51218; color: white; line-height: 30px; text-align: center; margin: 0 auto; cursor: pointer;}
 #main .r_main .login .before_login #login_btn:hover{background: red;}
-#main .r_main .login .after_login{position: absolute; text-align: center; width: 100%; height: 200px; overflow: hidden; background: white; top: 0; z-index: 1; display: none;}
+#main .r_main .login .after_login{position: absolute; text-align: center; width: 100%; height: 200px; overflow: hidden; background: #243b55; top: 0; z-index: 1; display: none;}
 #main .r_main .login .after_login .userImg{width: 86px; height: 86px; padding: 1px; border: 1px solid grey; margin: 22px auto 10px auto; background: lightblue;}
-#main .r_main .login .after_login b a{color: black;}
-#main .r_main .login .after_login .info_list{display: flex; justify-content: center;}
-#main .r_main .login .after_login .info_list li{width: 50px; height: 50px; position: relative; margin: 10px;}
-#main .r_main .login .after_login .info_list li span{font-size: 20px;}
-#main .r_main .login .after_login .info_list li a{color: grey;}
-#main .r_main .login .after_login .info_list li:not(:last-child)::after{content: "|"; position: absolute; color: grey; font-size: 60px; left: 55px; top: -15px;}
-
+.info_list{display: flex; justify-content: center; text-align: center;}
+.info_list li{width: 50px; height: 50px; position: relative; margin: 10px;}
+.info_list li span{font-size: 20px;}
+.info_list li a{color: white;}
+.info_list li:not(:last-child)::after{content: "|"; position: absolute; color: white; font-size: 60px; left: 55px; top: -15px;}
+/* 下载客户端 */
 .app{width: 244px; height: 286px; background: url(../img/download.png) 0 0; position: relative; overflow: hidden;}
 .app .download{width: 217px; height: 58px; position: absolute; bottom: 44px; left: 18px; background: url(../img/download.png) -18px -184px;}
 .app .download a{display: block; width: 100%; height: 100%;}
 .app .download:hover a{background: rgba(0, 0, 0, .2);}
 .app p{margin: 255px 0 0 15px; color: #6c6f6d; font-size: 12px;}
-
+/* MV */
 #main .r_main .singer{width: 100%; border-top: 2px solid #979797;}
 #main .r_main .com_box{width: 208px; margin: 0 auto; overflow: hidden;}
 #main .r_main .com_box .r_main_head{height: 38px; width: 100%; border-bottom: 1px solid #cfcfcf;font-size: 12px; box-sizing: border-box; padding-top: 10px; line-height: 28px;}
 #main .r_main .com_box .r_main_head a{color: #979797;}
 #main .r_main .com_box a:hover{text-decoration: underline;}
 #main .r_main .Mv .Mv_box .Mv_list{width: 180px; margin: 0 auto;}
-#main .r_main .Mv .Mv_box .Mv_list li{width: 100%; height: 100px; background: #fafafa; margin-top: 13px; overflow: hidden;}
-#main .r_main .Mv .Mv_box .Mv_list li .pic{width: 100%; height: 100%; background: lightblue;}
-
+#main .r_main .Mv .Mv_box .Mv_list li{width: 100%; height: 100px; background: #fafafa; margin-top: 13px; overflow: hidden; position: relative;}
+#main .r_main .Mv .Mv_box .Mv_list li a{display: block; width: 100%; height: 100%; background: rgba(0, 0, 0, .4); overflow: hidden; display: none;}
+#main .r_main .Mv .Mv_box .Mv_list li a .MvPlay{width: 32px; height: 32px; margin: 24px auto; border-radius: 50%; background-image: url(../img/playbar.png); background-position: -2px -206px;}
+#main .r_main .Mv .Mv_box .Mv_list li .details{width: 100%; height: 20px; background: rgba(0, 0, 0, .5); position: absolute; bottom: 0; font-size: 12px; color: white; line-height: 20px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; box-sizing: border-box; padding-left: 5px;}
+#main .r_main .Mv .Mv_box .Mv_list li:hover a{display: block;}
+#main .r_main .Mv .Mv_box .Mv_list li a .MvPlay:hover{box-shadow: 0 0 10px white;}
+/* 热门电台 */
 #main .r_main .anchor{width: 100%;}
 #main .r_main .anchor .anchor_box .anchor_list{width: 100%; margin-top: 10px; overflow: hidden;}
 #main .r_main .anchor .anchor_box .anchor_list li{width: 100%; height: 40px; display: flex; margin-top: 10px;}
 #main .r_main .anchor .anchor_box .anchor_list li .pic{width: 40px; height: 40px; background: lightblue;}
 #main .r_main .anchor .anchor_box .anchor_list li .info{width: 150px; margin-left: 10px; font-size: 12px; box-sizing: border-box; padding-top: 2px;}
-#main .r_main .anchor .anchor_box .anchor_list li .info p{color: #7b7b7b; line-height: 20px;}
-
-#foot{height: 170px; border-top: 2px solid lightblue; background: linear-gradient(to right, #141e30, #243b55);}
+#main .r_main .anchor .anchor_box .anchor_list li .info b{text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+#main .r_main .anchor .anchor_box .anchor_list li .info p{color: #7b7b7b; line-height: 20px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+/* 页脚 */
+#foot{height: 170px; min-width: 1200px; border-top: 2px solid lightblue; background: linear-gradient(to right, #141e30, #243b55);}
 #foot .foot_box{height: 100%; display: flex; justify-content: space-between; overflow: hidden; font-size: 13px; line-height: 14px; color: #777777;}
 #foot .foot_box .info{width: 500px;}
 #foot .foot_box .info a:hover{text-decoration: underline;}
@@ -192,16 +219,15 @@ body{font-family: Arial, Helvetica, sans-serif; background: linear-gradient(to r
 #foot .foot_box .pic_list li:nth-child(2) .pic{background: url(../img/foot_enter_new.png) 0 0; background-size: 110px 450px}
 #foot .foot_box .pic_list li:nth-child(3) .pic{background: url(../img/foot_enter_new.png) -63px -50px; background-size: 110px 450px}
 #foot .foot_box .pic_list li:nth-child(4) .pic{background: url(../img/foot_enter_new.png) 0 -101px; background-size: 110px 450px}
-
-
-#toTop{width: 43px; height: 39px; position: fixed; bottom: 160px; right: 84px; background: #fafafa; border: 2px solid #d9d9d9; text-align: center; font-size: 10px; box-sizing: border-box; padding-top: 5px; color: #777877; display: none;}
-
-#login_box{width: 400px; height: 450px; background: lightblue; position: fixed; top: 100px; left: 450px; z-index: 100; display: none;}
-#login_box #box_head{width: 100%; height: 30px; background: lightcoral; cursor: move;}
-#login_box #box_head #close{width: 20px; height: 20px; background: lightskyblue; margin: 4px 10px 0 0; cursor: pointer; border: 1px solid black; text-align: center;}
+/* 返回顶部按钮 */
+#toTop{width: 43px; height: 39px; position: fixed; bottom: 60px; right: 20px; background: #fafafa; border: 1px solid #d9d9d9; border-radius: 50%; text-align: center; font-size: 10px; box-sizing: border-box; padding-top: 5px; color: #777877; display: none;}
+/* 登录框 */
+#login_box{width: 400px; height: 450px; background: linear-gradient(to bottom,#f0f2f0, #000c40); position: fixed; top: 100px; left: 450px; z-index: 100; display: none;}
+#login_box #box_head{width: 100%; height: 30px; background: #243b55; cursor: move;}
+#login_box #box_head #close{width: 20px; height: 20px; background: white; margin: 4px 10px 0 0; cursor: pointer; border: 1px solid black; text-align: center;}
 #login_box .box_body{width: 100%; height: 420px; position: relative;}
 #login_box .box_body .com_box{width: 252px; height: 100%; margin: 0 auto; overflow: hidden;}
-#login_box .box_body #log_div .pic{width: 100px; height: 100px; background: lightgoldenrodyellow; margin: 30px auto;}
+#login_box .box_body #log_div .pic{width: 100px; height: 100px; background: url(../img/yunLogo.jpg); background-size: 100px 100px; border-radius: 22px; margin: 30px auto;}
 #login_box .box_body .inner{display: block; width:100%; height: 30px;}
 #login_box .box_body p{width: 100%; height: 20px; font-size: 14px; line-height: 20px; color: red; display: none;}
 #login_box .box_body .inner{font-size: 16px;}
@@ -209,19 +235,20 @@ body{font-family: Arial, Helvetica, sans-serif; background: linear-gradient(to r
 /* 去除number输入框的按钮 */
 input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance: none;}
 #login_box .box_body .passw{display: block; width: 250px; height: 30px; position: relative; margin: 10px 0;}
-#login_box .box_body .passw .paswicon{width: 15px; height: 10px; position: absolute; top: 10px; right: 10px; background: lightslategray; cursor: pointer;}
+#login_box .box_body .passw .paswicon{width: 15px; height: 10px; position: absolute; top: 10px; right: 10px; background: url(../img/unvisible.jpg); background-size: 15px 10px; cursor: pointer;}
 #login_box .box_body .agree{font-size: 12px;}
-#login_box .box_body .log_btn{display: block; width: 100px; height: 40px; background: mediumaquamarine; line-height: 40px; text-align: center; margin: 20px auto; cursor: pointer;}
-/* #login_box .box_body .log_btn a{display: block; width: 100%; height: 100%;} */
-#login_box .box_body span{font-size: 10px; cursor: pointer;}
-
-#login_box .box_body #register{background: lightblue; position: absolute; top: 0; left: 74px; display: none;}
-#login_box .box_body #register .pic{width: 150px; height: 50px; margin: 40px auto 20px auto; background: lightgoldenrodyellow;}
+#login_box .box_body .log_btn{display: block; width: 100px; height: 40px; color: white; background: mediumaquamarine; line-height: 40px; text-align: center; margin: 20px auto; cursor: pointer;}
+#login_box .box_body span{font-size: 10px; cursor: pointer; color: white;}
+/* 注册页面 */
+#login_box .box_body #register{position: absolute; top: 0; left: 74px; display: none; color: white;}
+#login_box .box_body #register .pic{width: 100px; height: 100px; margin: 40px auto 20px auto; background: url(../img/yunLogo1.png); background-size: 100px 100px;}
 #login_box .box_body #register p{font-size: 14px;}
 
+/* 自定义播放器（底部） */
 #music_box{position: fixed; min-width: 1170px; z-index: 110; bottom: 0; background: rgba(0, 0, 0, .5); width: 100%; height: 50px; display: none;}
 #music_box .mic_box{height: 100%;  display: flex; width: 1170px; margin: 0 auto;}
 #songImg{position: fixed; width: 70px; height: 70px; border: white 1px solid; cursor: pointer; border-radius: 50%; background: url(../img/default_album.jpg); background-size: 70px 70px; left: 50%; bottom: 0; margin: -22px 0 0 -600px; animation: play 5s infinite linear; z-index: 130;}
+/* 循环转动 */
 @keyframes play{
     0%{transform: rotate(0);}
     100%{transform: rotate(360deg);}
@@ -244,19 +271,175 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appear
 #music_box .progress .outPro .inbox{width: 650px; height: 4px; margin-top: 4px; background: black; cursor: pointer; border-radius: 2px;}
 #music_box .progress .inbox .inPro{display: inline-block; background: lightblue; height: 4px; position: absolute; top: 4px; border-radius: 2px;}
 #music_box .progress .inbox .proPoint{width: 12px; height: 12px; border-radius: 50%; background: white; position: absolute; top: 0; left: -6px; cursor: pointer;}
-#music_box .musicFuncList{height: 20px; display: flex; margin-top: 20px;}
-#music_box .musicFuncList li{width: 20px; height: 100%;}
-#music_box .musicFuncList li:first-of-type{width: 70px;}
-#music_box .musicFuncList li .volume_pic{display: inline-block; width: 14px; height: 14px; background: url(../img/volume.png); vertical-align: text-bottom; position: relative; top: 2px;}
+#music_box .musicFuncList{height: 20px; display: flex; margin-top: 15px;}
+#music_box .musicFuncList li{width: 25px; height: 100%;}
+#music_box .musicFuncList li:first-of-type{width: 80px;}
+#music_box .musicFuncList li:nth-of-type(2){width: 25px; height: 25px; margin-left: 10px;}
+#music_box .musicFuncList li #playOrder{width: 100%; height: 100%; background: url(../img/playbar.png); cursor: pointer;}
+#music_box .musicFuncList li #playOrder.order{background-position: -3px -344px;}
+#music_box .musicFuncList li #playOrder.order:hover{background-position: -33px -344px;}
+#music_box .musicFuncList li #playOrder.random{background-position: -65px -248px;}
+#music_box .musicFuncList li #playOrder.random:hover{background-position: -92px -248px;}
+#music_box .musicFuncList li #playOrder.singleCycle{background-position: -66px -344px;}
+#music_box .musicFuncList li #playOrder.singleCycle:hover{background-position: -93px -344px;}
+#music_box .musicFuncList li .volume_pic{display: inline-block; width: 25px; height: 100%; background: url(../img/playbar.png); background-position: -2px -248px; vertical-align: middle; position: relative; top: 2px; cursor: pointer;}
 #music_box .musicFuncList li #volume{-webkit-appearance: none; border-radius: 5px; height: 3px; width: 50px; outline: none;}
 #music_box .musicFuncList li #volume::-webkit-slider-thumb{-webkit-appearance: none; width: 10px; height: 10px; background: white; border-radius: 50%;}
 
-.bfq{background: lightgray; height: 100%; z-index: 100; position: fixed; top: 0; display: none;}
-#AudioHtml{width: 1200px; height: 580px; margin: 10px auto; background: lightcyan; border-radius: 10px; display: flex; flex-wrap: wrap; overflow: hidden; z-index: 100; display: none;}
-#AudioHtml .top{color: white; width: 100%; height: 50px; background: rgb(76, 143, 187); text-align: center; line-height: 50px;}
-#AudioHtml .top span{color: black; width: 20px; height: 20px; margin: 10px; background: lightskyblue; text-align: center; line-height: 20px; cursor: pointer;}
+/* 自定义播放器（大） */
+.bfq{background:  linear-gradient(to right, #141e30, #243b55); height: 100%; z-index: 100; position: fixed; top: 0; display: none;}
+#AudioHtml{width: 1200px; height: 580px; margin: 10px auto; background: #576c85; border-radius: 10px; display: flex; flex-wrap: wrap; overflow: hidden; z-index: 100; display: none;}
+#AudioHtml .top{color: white; width: 100%; height: 50px; background: rgb(38, 49, 56); text-align: center; line-height: 50px;}
+#AudioHtml .top span{color: black; width: 20px; height: 20px; margin: 10px; background: rgb(137, 147, 153); text-align: center; line-height: 20px; cursor: pointer;}
 #AudioHtml .left{width: 40%; height: 480px; display: inline-block; overflow: hidden;}
 #AudioHtml .left .AudioHtmlImg{width: 330px; height: 330px; border-radius: 50%; margin: 50px auto; background: url(../img/default_album.jpg); background-size: 330px 330px; animation: play 5s infinite linear;}
-#AudioHtml .right{width: 60%; height: 480px; display: inline-block;}
-#AudioHtml .right .lrc{width: 580px; height: 380px; margin: 15px; background: rgb(180, 231, 231);}
+#AudioHtml .right{width: 60%; height: 480px; display: inline-block; position: relative;}
+#AudioHtml .right .lrcBox{width: 580px; height: 380px; margin: 15px; background: rgba(0,0,0, 0.5); box-sizing: border-box; padding: 0 30px; text-align: center; overflow-y: scroll;}
+#AudioHtml .right .lrcBox .lrcText{width: 100%; height: 100%;}
+#AudioHtml .right .lrcBox .lrcText p{color: white; font-size: 14px; margin-top: 10px; letter-spacing: 2px;}
+#AudioHtml .right .lrcBox .lrcText p:first-of-type{margin-top: 190px;}
+#AudioHtml .right .lrcBox .lrcText p:last-of-type{margin-bottom: 180px;}
+#AudioHtml .right .lrcBox .funcBtn{width: 20px; height: 20px; color: white; position: absolute; cursor: pointer;}
+#AudioHtml .right .lrcBox .lrcTimePre{top: 160px; right: 90px; border: 1px solid lightblue;}
+#AudioHtml .right .lrcBox .lrcTimeAft{top: 200px; right: 90px; border: 1px solid lightblue;}
+#AudioHtml .right .lrcBox .curTimePre{bottom: 60px; left: -20px; border: 1px solid white;}
+#AudioHtml .right .lrcBox .curTimeAft{bottom: 60px; right: 90px; border: 1px solid white;}
+/* 去除歌词的滚动条 */
+#AudioHtml .right .lrcBox::-webkit-scrollbar{display: none;}
 #AudioHtml #music_box{width: 100%; height: 70px; background: black; position: relative; display: flex;}
+
+/* 我的音乐界面 */
+.page2{min-height: 600px; min-width: 970px; display: none; overflow: hidden; background: linear-gradient(to right, #141e30, #243b55); color: white;}
+/* 未登录 */
+.page2 .notLogin{width: 100%;}
+.page2 .notLogin .notice{width: 500px; margin: 100px auto; text-align: center;}
+.page2 .notLogin .notice h1{color: white;}
+.page2 .notLogin .pleaseLoginBtn{width: 50px; height: 30px; text-align: center; line-height: 30px; cursor: pointer; margin: 100px auto; background: lightcoral;}
+/* 已登录 */
+.page2 .hasLogin{height: 100%; display: flex;}
+.page2 .hasLogin .MyMusicLeft{width: 200px; overflow: hidden; margin: 0 10px;}
+.page2 .hasLogin .MyMusicLeft .PlayList{margin-top: 80px; width: 180px; background: lightslategray; padding: 5px;}
+.page2 .hasLogin .MyMusicLeft .PlayList .PlayListTitle{width: 100%; height: 20px; line-height: 20px;}
+.page2 .hasLogin .MyMusicLeft .PlayList .PlayListTitle .newIcon{display: inline-block; width: 40px; height: 100%; border: 1px gray solid; border-radius: 5px; font-size: 14px; text-align: center; cursor: pointer; background: #243b55;}
+.page2 .hasLogin .MyMusicLeft .PlayList .myPlayList{width: 100%; margin-top: 10px;}
+.page2 .hasLogin .MyMusicLeft .PlayList .myPlayList li{width: 100%; height: 50px; display: flex; flex-wrap: wrap; margin: 5px 0; cursor: pointer;}
+.page2 .hasLogin .MyMusicLeft .PlayList .myPlayList li .myPlayListPic{width: 50px; height: 100%;}
+.page2 .hasLogin .MyMusicLeft .PlayList .myPlayList li .playListNameBox{width: 120px; margin-left: 10px; height: 100%;}
+.page2 .hasLogin .MyMusicLeft .PlayList .myPlayList li .playListNameBox .playListName{font-size: 14px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.page2 .hasLogin .MyMusicLeft .PlayList .myPlayList li .playListNameBox .playListSongNumBox{width: 100%; height: 12px; margin-top: 10px; font-size: 12px;}
+.page2 .hasLogin .MyMusicRight{width: 770px; height: 100%; box-sizing: border-box; padding: 0 30px; margin: 0 20px; border-left: 2px solid gray; overflow: hidden;}
+/* 歌单详情 */
+.page2 .hasLogin .MyMusicRight .playListDetail{width: 100%; height: 180px; margin-top: 80px; display: flex; flex-wrap: wrap;}
+.page2 .hasLogin .MyMusicRight .playListDetail .page2PlayListPic{width: 160px; height: 160px; margin-right: 50px;}
+.page2 .hasLogin .MyMusicRight .playListDetail .MyPlayListInfo{width: 400px;}
+.page2 .hasLogin .MyMusicRight .playListDetail .myPlayListName{margin-bottom: 20px;}
+.page2 .hasLogin .MyMusicRight .playListDetail .MyPlayListInfo .MyMusicUserImg{display: inline-block; width: 30px; height: 30px; vertical-align: middle; margin-right: 10px;}
+.page2 .hasLogin .MyMusicRight .playListDetail .MyPlayListInfo .createTime{margin-left: 10px; font-size: 12px;}
+.MyMusicFuncList{width: 280px; display: flex; justify-content: space-between; color: #243b55; font-size: 14px; margin-top: 20px;}
+.MyMusicFuncList li{display: inline-block; width: 40px; border-radius: 5px; cursor: pointer; text-align: center; line-height: 20px; border: 1px solid gray; background: lightblue;}
+.playSongsListBox{width: 100%;}
+/* 右边标题 */
+.MyMusicRightTitle{width: 100%; height: 30px; line-height: 30px; margin-bottom: 10px; border-bottom: 2px solid lightblue;}
+.MyMusicRightTitle .title{font-size: 24px;}
+.MyMusicRightTitle span:not(:first-of-type){font-size: 12px;}
+.MyMusicRightTitle .songNum{margin-left: 10px;}
+/* 歌曲列表 */
+.playSongsListBox .Songsdetail{width: 100%; height: 30px; border-bottom: 1px solid gray; box-shadow: 0 0 5px gray; display: flex; line-height: 30px;}
+.playSongsListBox .songName{height: 100%; width: 310px; border-left: 1px solid gray; cursor: pointer; box-sizing: border-box; padding-left: 5px;}
+.playSongsListBox .SongLength{height: 30px; width: 100px; position: relative; box-sizing: border-box; padding-left: 5px;}
+.playSongsListBox .songLength{width: 100%; height: 100%;}
+.playSongsListBox .SongLength .listFunction{width: 100%; left: 0; position: absolute; right: 10px; top: 6px; display: none;}
+.playSongsListBox .SongLength .listFunction  li{width: 18px; height: 18px; background: url(../img/icon.png); cursor: pointer;}
+.playSongsListBox .SongLength .listFunction  li:first-of-type{background-position: 0 -698px;}
+.playSongsListBox .SongLength .listFunction  li:first-of-type:hover{background-position: -22px -698px;}
+.playSongsListBox .SongLength .listFunction  li:nth-of-type(2){background-position: -44px -86px; margin-right: 2px;}
+.playSongsListBox .SongLength .listFunction  li:nth-of-type(2):hover{background-position: -44px -109px;}
+.playSongsListBox .SongLength .listFunction  li:nth-of-type(3){background-position: -44px -136px;}
+.playSongsListBox .SongLength .listFunction  li:nth-of-type(3):hover{background-position: -44px -159px;}
+.playSongsListBox .SongLength .listFunction  li:nth-of-type(4){background: url(../img/table.png); background-position: -79px -173px;}
+.playSongsListBox .SongLength .listFunction  li:nth-of-type(4):hover{background-position: -102px -173px;}
+.playSongsListBox .SongLength .listFunction li:last-of-type{background: url(../img/table.png) 0 -216px; margin-left: 5px;}
+.playSongsListBox .SongLength .listFunction li:last-of-type:hover{background-position: -20px -216px;}
+.playSongsListBox .Singer{height: 100%; width: 100px; box-sizing: border-box; padding-left: 5px; cursor: pointer;}
+.playSongsListBox .Album{height: 100%; width: 100px; box-sizing: border-box; padding-left: 5px; cursor: pointer;}
+.playSongsListBox .Songsdetail .songName{margin-left: 60px;}
+.playSongsListBox .Songsdetail .SongLength{border-left: 1px solid gray;}
+.playSongsListBox .Songsdetail .Singer{border-left: 1px solid gray;}
+.playSongsListBox .Songsdetail .Album{border-left: 1px solid gray;}
+.playSongsList{width: 100%; color: black;}
+.playSongsList li div{text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.playSongsList li{display: flex; background: white; font-size: 14px; width: 100%; line-height: 30px; overflow: hidden;}
+.playSongsList li:hover .SongLength .songLength{display: none;}
+.playSongsListBox .playSongsList li:hover .SongLength .listFunction{display: flex;}
+.ListHead{width: 60px;}
+.ListHead .songOrder{margin-left: 5px;}
+.ListHead .palyIcon{display: inline-block; width: 18px; height: 18px; margin: 6px; background: url(../img/table.png) 0 -103px; cursor: pointer;}
+/* 评论 */
+.page2 .hasLogin .MyMusicRight .MyCommentBox{width: 100%; margin-top: 100px;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .MyComment{width: 100%; display: flex; flex-wrap: wrap; position: relative; height: 170px;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .MyCommentImg{width: 50px; height: 50px; margin: 10px; background: lightblue;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .MyComment .MyCommentText{display: inline-block; outline: none; resize: none; box-sizing: border-box; padding: 10px; width: 560px; height: 100px; margin: 10px; border: 1px solid gray; border-radius: 5px;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .MyComment .MyCommentImg::after{content: "◂"; font-size: 30px; color: white; position: relative; left: 55px; top: 10px;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .MyComment .sentComment{width: 80px; height: 30px; background: lightblue; border-radius: 5px; position: absolute; right: 30px; bottom: 10px; text-align: center; line-height: 30px;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox{width: 100%; box-sizing: border-box; padding: 0 10px;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentTitle{width: 100%; border-bottom: 2px solid gray;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList{width: 100%; margin-bottom: 20px;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li{display: flex; width: 100%; height: 70px; font-size: 12px; position: relative;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li .newCommentTextBox{margin-top: 10px;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li .newCommentTextBox .newCommentUserName{color: lightblue;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li .newCommentTextBox .commentFoot{position: absolute; width: 560px; bottom: 10px;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li .newCommentTextBox .commentFoot .newCommentFunc .deleteComment{display: none; border-right: 1px solid gray; padding-right: 5px;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li .newCommentTextBox .commentFoot .newCommentFunc .reply{border-left: 1px solid gray; padding-left: 5px; margin-left: 5px;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li .newCommentTextBox .commentFoot .newCommentFunc .like{display: inline-block; width: 18px; height: 16px; background: url(../img/playbar.png) -64px -506px; vertical-align: bottom; margin-left: 5px; cursor: pointer;}
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li:hover .newCommentTextBox .commentFoot .newCommentFunc .deleteComment{display: inline;}
+
+/* 个人中心 */
+.userHome{background:  linear-gradient(to right, #141e30, #243b55); border-left: 2px solid gray; border-right: 2px solid gray; color: white; display: none; flex-wrap: wrap; box-sizing: border-box; padding: 100px 40px 0 40px;}
+.userHome .userHomeImg{width: 180px; height: 180px; margin-right: 40px; border: 1px solid gray; background: lemonchiffon;}
+.userHome .userHomeInfo{width: 662px;}
+.userHome .userHomeInfo .info_list{width: 210px; border-bottom: 1px solid gray; margin-bottom: 10px;}
+.userHome .userHomeInfo .homeNameBox{width: 100%; padding-bottom: 10px; border-bottom: 1px solid gray;}
+.userHome .userHomeInfo .homeNameBox .homeName{font-size: 30px;}
+.userHome .userHomeInfo .homeNameBox .level{display: inline-block; vertical-align: super; font-size: 12px; color: red; border: 1px solid red; padding: 0 5px; border-radius: 5px;}
+.userHome .userHomeInfo .homeNameBox .level .levelNum{margin-left: 3px;}
+.userHome .userHomeInfo .homeNameBox .modifyInfo{display: inline-block; width: 100px; height: 30px; margin: 8px;}
+.userHome .userHomeInfo .myAreaBox{width: 100%; height: 12px; font-size: 12px; color: gray;}
+.userHome .userHomeInfo .info_list{justify-content: start;}
+/* 听歌排行 */
+.userHome .hearingTop{width: 100%; margin-top: 50px;}
+.userHome .hearingTop .hearingTopList{width: 100%; color: black;}
+.userHome .hearingTop .hearingTopList li{background: white; font-size: 14px;}
+.userHome .hearingTop .hearingTopList li .hearingNameBox{width: 500px; border-right: 1px solid gray; display: flex; position: relative;}
+.userHome .hearingTop .hearingTopList li .hearingNameBox .hearingName{margin-left: 10px;}
+.userHome .hearingTop .hearingTopList li:hover .hearingNameBox .hearingTopIco{width: 80px; height: 100%; position: absolute; right: 10px; top: 6px; display: none;}
+.userHome .hearingTop .hearingTopList li:hover .hearingNameBox .hearingTopIco li{width: 18px; height: 18px; background: url(../img/icon.png);}
+.userHome .hearingTop .hearingTopList li:hover .hearingNameBox .hearingTopIco{display: flex;}
+.userHome .hearingTop .hearingTopList li:hover .hearingNameBox .hearingTopIco li:first-of-type{background-position: 0 -698px;}
+.userHome .hearingTop .hearingTopList li:hover .hearingNameBox .hearingTopIco li:first-of-type:hover{background-position: -22px -698px;}
+.userHome .hearingTop .hearingTopList li:hover .hearingNameBox .hearingTopIco li:nth-of-type(2){background-position: -44px -86px; margin-right: 2px;}
+.userHome .hearingTop .hearingTopList li:hover .hearingNameBox .hearingTopIco li:nth-of-type(2):hover{background-position: -44px -109px;}
+.userHome .hearingTop .hearingTopList li:hover .hearingNameBox .hearingTopIco li:nth-of-type(3){background-position: -44px -136px;}
+.userHome .hearingTop .hearingTopList li:hover .hearingNameBox .hearingTopIco li:nth-of-type(3):hover{background-position: -44px -159px;}
+.userHome .hearingTop .hearingTopList li:hover .hearingNameBox .hearingTopIco li:nth-of-type(4){background: url(../img/table.png); background-position: -79px -173px;}
+.userHome .hearingTop .hearingTopList li:hover .hearingNameBox .hearingTopIco li:nth-of-type(4):hover{background-position: -102px -173px;}
+.userHome .hearingTop .hearingTopList li .hearingTime{margin-left: 10px;}
+/* 我创建的歌单 */
+.userHome .SongSheetBox{width: 100%; margin-top: 50px; padding-bottom: 20px;}
+.userHome .SongSheetBox .SongSheetList{width: 100%; display: flex; flex-wrap: wrap;}
+.userHome .SongSheetBox .SongSheetList li{width: 120px; margin: 0 10px;}
+.userHome .SongSheetBox .SongSheetList li .songSheetPic{width: 120px; height: 120px; background: url(../img/like.jpg); background-size: 120px 120px;}
+.userHome .SongSheetBox .SongSheetList li .songSheetInfo{line-height: 14px; font-size: 14px; margin-top: 10px; width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+/* 搜索结果 */
+.searchResultBox{width: 100%; height: 100%; min-height: 600px; background: #243b55; overflow: hidden; display: none; position: relative;}
+#closesearchResultBox{width: 20px; height: 20px; text-align: center; line-height: 20px; background: lightblue; border: 1px solid gray; cursor: pointer; position: absolute; top: 120px; right: 50px;}
+.searchResultBox .searchResult{width: 800px; margin: 150px auto; color: white;}
+.searchResultBox .searchResult .Songsdetail{margin-top: 10px;}
+.searchResultBox .searchResult .Songsdetail .songName{width: 380px;}
+.searchResultBox .searchResult .Songsdetail .Singer{width: 120px;}
+.searchResultBox .searchResult .Songsdetail .Album{width: 160px;}
+.searchResultBox .searchResult .searchResultList{width: 100%; }
+.searchResultBox .searchResult .searchResultList li{width: 100%;}
+.searchResultBox .searchResult .searchResultList li .songName{width: 380px;}
+.searchResultBox .searchResult .searchResultList li .Singer{width: 120px;}
+.searchResultBox .searchResult .searchResultList li .Album{width: 160px;}
+
