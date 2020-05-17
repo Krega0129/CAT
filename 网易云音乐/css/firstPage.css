@@ -1,0 +1,206 @@
+/* 主体内容 */
+#main_bg{
+    background: linear-gradient(to right, #141e30, #243b55); 
+    min-width: 1200px;
+}
+
+#main{
+    border-left: 2px solid lightblue; 
+    border-right: 2px solid lightblue; 
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+/* 左边主体部分 */
+#main .l_main{
+    width: 724px; 
+    border-right: 2px solid lightblue; 
+    padding-bottom: 40px;
+}
+
+#main .l_main a:hover{
+    text-decoration: underline;
+}
+
+#main .sign{
+    position: relative;
+    top: -90px;
+}
+
+#main .l_main .common_box{
+    width: 724px; 
+    box-sizing: border-box; 
+    padding: 0 20px;
+}
+
+#main .l_main .common_box .common_head{
+    width: 684px; 
+    height: 52px; 
+    overflow: hidden; 
+    border-bottom: 3px solid lightblue; 
+    box-sizing: border-box; 
+    padding-top: 16px;
+}
+
+#main .l_main .common_box .common_head b{
+    font-size: 20px; 
+    line-height: 30px;
+}
+
+#main .l_main .hot_head_list{
+    display: flex; 
+    width: 265px; 
+    color: #7e7e7e;
+}
+
+#main .l_main .hot_head_list li{
+    width: 53px; 
+    height: 20px; 
+    margin-top: 4px; 
+    text-align: center; 
+    line-height: 20px; 
+    font-size: 12px; 
+    cursor: pointer;
+}
+
+#main .l_main .hot_head_list li:not(:last-child)::after{
+    content: "|"; 
+    position: relative; 
+    left: 14px; 
+    top: -1px;
+}
+
+#main .l_main .common_box .common_head span{
+    font-size: 12px;
+}
+
+/* 右边主体部分 */
+#main .r_main{
+    width: 244px;
+}
+
+#main .r_main b{
+    color: white;
+}
+
+/* 登录 */
+#main .r_main .login{
+    position: relative; 
+    width: 100%;
+}
+
+#main .r_main .login .before_login{
+    width: 244px; 
+    margin: 1px; 
+    height: 120px; 
+    overflow: hidden;  
+    font-size: 12px;
+}
+
+#main .r_main .login .before_login p{
+    width: 202px; 
+    line-height: 22px; 
+    color: white; 
+    margin: 15px 20px;
+}
+
+#main .r_main .login .before_login #login_btn{
+    width: 100px; 
+    height: 30px; 
+    border-radius: 5px; 
+    background: #d51218; 
+    color: white; 
+    line-height: 30px; 
+    text-align: center; 
+    margin: 0 auto; 
+    cursor: pointer;
+}
+
+#main .r_main .login .before_login #login_btn:hover{
+    background: red;
+}
+
+#main .r_main .login .after_login{
+    position: absolute; 
+    text-align: center; 
+    width: 100%; 
+    height: 200px; 
+    overflow: hidden; 
+    background: #243b55; 
+    top: 0; 
+    z-index: 1; 
+    display: none;
+}
+
+#main .r_main .login .after_login .userImg{
+    width: 86px; 
+    height: 86px; 
+    padding: 1px; 
+    border: 1px solid grey; 
+    margin: 22px auto 10px auto; 
+    background: lightblue;
+}
+
+.info_list{
+    display: flex; 
+    justify-content: center; 
+    text-align: center;
+}
+
+.info_list li{
+    width: 50px; 
+    height: 50px; 
+    position: relative; 
+    margin: 10px;
+}
+
+.info_list li span{
+    font-size: 20px;
+}
+
+.info_list li a{
+    color: white;
+}
+
+.info_list li:not(:last-child)::after{
+    content: "|"; 
+    position: absolute; 
+    color: white; 
+    font-size: 60px; 
+    left: 55px; 
+    top: -15px;
+}
+
+/* 下载客户端 */
+.app{
+    width: 244px; 
+    height: 286px; 
+    background: url(../img/download.png) 0 0; 
+    position: relative; 
+    overflow: hidden;
+}
+
+.app .download{
+    width: 217px; 
+    height: 58px; 
+    position: absolute; 
+    bottom: 44px; 
+    left: 18px; 
+    background: url(../img/download.png) -18px -184px;
+}
+
+.app .download a{
+    display: block; 
+    width: 100%; 
+    height: 100%;
+}
+
+.app .download:hover a{
+    background: rgba(0, 0, 0, .2);
+}
+
+.app p{
+    margin: 255px 0 0 15px; 
+    color: #6c6f6d; 
+    font-size: 12px;
+}

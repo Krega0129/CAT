@@ -1,0 +1,45 @@
+/* 热门电台 */
+#main .r_main .anchor{
+    width: 100%;
+}
+
+#main .r_main .anchor .anchor_box .anchor_list{
+    width: 100%; 
+    margin-top: 10px; 
+    overflow: hidden;
+}
+
+#main .r_main .anchor .anchor_box .anchor_list li{
+    width: 100%; 
+    height: 40px; 
+    display: flex; 
+    margin-top: 10px;
+}
+
+#main .r_main .anchor .anchor_box .anchor_list li .pic{
+    width: 40px; 
+    height: 40px; 
+    background: lightblue;
+}
+
+#main .r_main .anchor .anchor_box .anchor_list li .info{
+    width: 150px; 
+    margin-left: 10px; 
+    font-size: 12px; 
+    box-sizing: border-box; 
+    padding-top: 2px;
+}
+
+#main .r_main .anchor .anchor_box .anchor_list li .info b{
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+#main .r_main .anchor .anchor_box .anchor_list li .info p{
+    color: #7b7b7b; 
+    line-height: 20px; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}

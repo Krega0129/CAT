@@ -1,0 +1,53 @@
+/* 推荐歌手 */
+#main .l_main .singers .singers_box{
+    width: 682px; 
+    height: 184px; 
+    background: rgb(62, 86, 109); 
+    border: 1px solid #7e7e7e; 
+    overflow: hidden; 
+    position: relative; 
+    margin-top: 20px;
+}
+
+#main .l_main .singers .singers_box #singers_list{
+    width: 2617.5px; 
+    height: 182px; 
+    position: absolute; 
+    left: 0;
+    margin: 29px 0 0 28px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+#main .l_main .singers .singers_box #singers_list li{
+    width: 630px; 
+    height: 150px; 
+    display: flex; 
+    justify-content: space-between; 
+    text-align: center;
+}
+
+#main .l_main .singers .singers_box #singers_list li .list_box{
+    width: 100px; 
+    height: 120px; 
+    transition: .3s; 
+    transform: scale(1);
+}
+
+#main .l_main .singers .singers_box #singers_list li .list_box:hover{
+    width: 100px; 
+    height: 120px; 
+    transform: scale(1.05);
+}
+
+#main .l_main .singers .singers_box #singers_list li .list_box .img{
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    cursor: pointer;
+}
+
+#main .l_main .singers .singers_box #singers_list li .list_box p{
+    font-size: 16px; 
+    margin-top: 10px;
+}

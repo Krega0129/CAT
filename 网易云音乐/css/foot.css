@@ -1,0 +1,105 @@
+/* 页脚 */
+#foot{
+    height: 170px; 
+    min-width: 1200px; 
+    border-top: 2px solid lightblue; 
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+
+#foot .foot_box{
+    height: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    overflow: hidden; 
+    font-size: 13px; 
+    line-height: 14px; 
+    color: #777777;
+}
+
+#foot .foot_box .info{
+    width: 500px;
+}
+
+#foot .foot_box .info a:hover{
+    text-decoration: underline;
+}
+
+#foot .foot_box .info .foot_list{
+    width: 100%; 
+    height: 14px; 
+    margin-top: 20px; 
+    display: flex;
+}
+
+#foot .foot_box .info .foot_list li{
+    display: inline-block; 
+    position: relative; 
+    margin-right: 15px;
+}
+
+#foot .foot_box .info .foot_list li a{
+    color: #a8a8a8;
+}
+
+#foot .foot_box .info .foot_list li::after{
+    content: "|"; 
+    position: absolute; 
+    right: -7px;
+}
+
+#foot .foot_box .info p{
+    margin-top: 10px;
+}
+
+#foot .foot_box .info p a{
+    color: #777777;
+}
+
+#foot .foot_box .info p span{
+    margin-right: 8px;
+}
+
+#foot .foot_box .pic_list{
+    width: 324px; 
+    height: 70px; 
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 30px;
+}
+
+#foot .foot_box .pic_list li{
+    width: 50px; 
+    height: 100%; 
+    text-align: center;
+}
+
+#foot .foot_box .pic_list li .pic{
+    width: 47px; 
+    height: 45px; 
+    margin: 1px 0 5px 0;
+}
+
+#foot .foot_box .pic_list li p{
+    font-size: 10px;
+}
+
+#foot .foot_box .pic_list li:nth-child(1) .pic{
+    background: url(../img/foot_enter_new.png) -63px -101px; 
+    background-size: 110px 450px;
+}
+
+#foot .foot_box .pic_list li:nth-child(2) .pic{
+    background: url(../img/foot_enter_new.png) 0 0; 
+    background-size: 110px 450px;
+}
+
+#foot .foot_box .pic_list li:nth-child(3) .pic{
+    background: url(../img/foot_enter_new.png) -63px -50px; 
+    background-size: 110px 450px;
+}
+
+#foot .foot_box .pic_list li:nth-child(4) .pic{
+    background: url(../img/foot_enter_new.png) 0 -101px; 
+    background-size: 110px 450px;
+}
+

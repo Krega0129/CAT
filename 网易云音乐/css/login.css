@@ -1,0 +1,233 @@
+/* 登录框 */
+#login_box{
+    width: 400px; 
+    height: 450px; 
+    background: linear-gradient(to bottom,#f0f2f0, #000c40); 
+    position: fixed; 
+    top: 100px; 
+    left: 50%;
+    margin-left: -200px; 
+    z-index: 100; 
+    display: none;
+}
+
+#login_box #box_head{
+    width: 100%; 
+    height: 30px; 
+    background: #243b55; 
+    cursor: move;
+}
+
+#login_box #box_head #close{
+    width: 20px; 
+    height: 20px; 
+    background: white; 
+    margin: 4px 10px 0 0; 
+    cursor: pointer; 
+    border: 1px solid black; 
+    text-align: center;
+}
+
+#login_box .box_body{
+    width: 100%; 
+    height: 420px; 
+    position: relative;
+}
+
+#login_box .box_body .com_box{
+    width: 252px; 
+    height: 100%; 
+    margin: 0 auto; 
+    overflow: hidden;
+}
+
+#login_box .box_body #log_div .pic{
+    width: 100px; 
+    height: 100px; 
+    background: url(../img/yunLogo.jpg); 
+    background-size: 100px 100px; 
+    border-radius: 22px; 
+    margin: 30px auto;
+}
+
+#login_box .box_body .inner{
+    display: block; 
+    width:100%; 
+    height: 30px;
+}
+
+#login_box .box_body p{
+    width: 100%; 
+    height: 20px; 
+    font-size: 14px; 
+    line-height: 20px; 
+    color: red; 
+    display: none;
+}
+
+#login_box .box_body .inner{
+    font-size: 16px;
+}
+
+#login_box .box_body .inner::placeholder{
+    font-size: 14px;
+}
+
+/* 去除number输入框的按钮 */
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+#login_box .box_body .passw{
+    display: block; 
+    width: 250px; 
+    height: 30px; 
+    position: relative; 
+    margin: 10px 0;
+}
+
+#login_box .box_body .passw .paswicon{
+    width: 15px; 
+    height: 10px; 
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    background: url(../img/unvisible.jpg); 
+    background-size: 15px 10px; 
+    cursor: pointer;
+}
+
+#login_box .box_body input{
+    vertical-align: middle;
+}
+
+#login_box .box_body .agree{
+    font-size: 12px;
+}
+
+#login_box .box_body .log_btn{
+    display: block; 
+    width: 100px; 
+    height: 40px; 
+    color: white; 
+    background: mediumaquamarine; 
+    line-height: 40px; 
+    text-align: center; 
+    margin: 20px auto; 
+    cursor: pointer;
+}
+
+#login_box .box_body span{
+    font-size: 10px; 
+    cursor: pointer; 
+    color: white;
+}
+
+/* 注册页面 */
+#login_box .box_body #register{
+    position: absolute; 
+    top: 0; 
+    left: 74px; 
+    display: none; 
+    color: white;
+}
+
+#login_box .box_body #register .pic{
+    width: 100px; 
+    height: 100px; 
+    margin: 10px auto 20px auto; 
+    background: url(../img/yunLogo1.png); 
+    background-size: 100px 100px;
+}
+
+#login_box .box_body #register p{
+    font-size: 14px;
+}
+
+/* 登录验证 */
+.verification{
+    width: 400px;
+    height: 150px;
+    background: aliceblue;
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    margin-top: -75px;
+    left: 50%;
+    margin-left: -200px;
+    display: none;
+}
+
+.verification .closeVer{
+    width: 20px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+}
+
+.verification .verGoal{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url(../img/ver.png);
+    background-size: 50px 50px;
+    opacity: .5;
+    position: absolute;
+    right: 20px;
+}
+
+.verification .verMove{
+    width: 50px;
+    height: 50px;
+    background: url(../img/ver.png);
+    background-size: 50px 50px;
+    border-radius: 50%;
+    opacity: .5;
+    position: absolute;
+    left: 20px;
+}
+
+.verification .moveBar{
+    width: 360px;
+    height: 10px;
+    border-radius: 5px;
+    background: gray;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.verification .moveBtn{
+    width: 50px;
+    height: 20px; 
+    border-radius: 10px;
+    text-align: center;
+    color: lightgray;
+    cursor: pointer;
+    background: khaki;
+    position: absolute;
+    top: -5px;
+}
+
+.verSuc{
+    width: 400px;
+    height: 100px;
+    background: white;
+    color: lime;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    position: fixed;
+    top: 100px; 
+    left: 50%;
+    margin-left: -200px;
+    display: none;
+}
+

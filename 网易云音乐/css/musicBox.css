@@ -1,0 +1,415 @@
+/* 自定义播放器（底部） */
+#music_box{
+    position: fixed; 
+    min-width: 1170px; 
+    z-index: 110; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, .5); 
+    width: 100%; 
+    height: 50px; 
+    display: none;
+}
+
+#music_box .mic_box{
+    height: 100%;  
+    display: flex; 
+    width: 1170px; 
+    margin: 0 auto;
+}
+
+
+#songImg{
+    position: fixed; 
+    width: 70px; 
+    height: 70px; 
+    border: white 1px solid; 
+    cursor: pointer; 
+    border-radius: 50%; 
+    background: url(../img/default_album.jpg); 
+    background-size: 70px 70px; 
+    left: 50%; 
+    bottom: 0; 
+    margin: -22px 0 0 -600px; 
+    animation: play 5s infinite linear; 
+    z-index: 130;
+}
+
+/* 循环转动 */
+@keyframes play{
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+
+#music_box .ctrl{
+    width: 105px; 
+    height: 20px; 
+    margin: 15px 50px 0 100px; 
+    position: relative;
+}
+
+#music_box .ctrl div{
+    display: inline-block; 
+    width: 24px; 
+    height: 24px; 
+    border: none; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    background-image: url(../img/playbar.png);
+}
+
+#music_box .ctrl .preSong{
+    margin-right: 52px; 
+    background-position: -32px -132px;
+}
+
+#music_box .ctrl .preSong:hover{
+    background-position-x: -2px;
+}
+
+#music_box .ctrl .pause{
+    width: 32px; 
+    height: 32px; 
+    position: absolute; 
+    top: -4px; 
+    left: 35px; 
+    background-position: -2px -206px;
+}
+
+#music_box .ctrl .begin{
+    width: 32px; 
+    height: 32px; 
+    position: absolute; 
+    top: -4px; 
+    left: 35px; 
+    background-position: -2px -167px;
+}
+
+#music_box .ctrl #pause:hover{
+    box-shadow: 0 0 10px white;
+}
+
+#music_box .ctrl .nextSong{
+    background-position: -112px -132px;
+}
+
+#music_box .ctrl .nextSong:hover{
+    background-position-x: -82px;
+}
+
+#music_box .progress{
+    width: 770px; 
+    height: 50px;  
+    margin-top: 5px; 
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    color: white;
+}
+
+#music_box .progress .songNameBox{
+    width: 600px; 
+    margin-left: 20px; 
+    margin-right: 150px; 
+    color: white; 
+    height: 20px; 
+    position: relative; 
+    overflow: hidden;
+}
+
+#music_box .progress #songName1{
+    height: 100%; 
+    width: 100%; 
+    position: absolute; 
+    left: 0; 
+    top: 0;
+}
+
+#music_box .progress #songName2{
+    height: 100%; 
+    width: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: -600px;
+}
+
+#music_box .progress .time{
+    width: 50px; 
+    height: 12px; 
+    line-height: 12px; 
+    font-size: 12px; 
+    text-align: center;
+}
+
+#music_box .progress .outPro{
+    width: 650px; 
+    height: 12px; 
+    position: relative;
+}
+
+#music_box .progress .outPro .inbox{
+    width: 650px; 
+    height: 4px; 
+    margin-top: 4px; 
+    background: black; 
+    cursor: pointer; 
+    border-radius: 2px;
+}
+
+#music_box .progress .inbox .inPro{
+    display: inline-block; 
+    background: linear-gradient(to right, #de6161, #2657eb); 
+    height: 4px; 
+    position: absolute; 
+    top: 4px; 
+    border-radius: 2px;
+}
+
+#music_box .progress .inbox .proPoint{
+    width: 12px; 
+    height: 12px; 
+    border-radius: 50%; 
+    background: white; 
+    position: absolute; 
+    top: 0; 
+    left: -6px; 
+    cursor: pointer;
+}
+
+#music_box .progress .inbox #timeTip{
+    width: 32px;
+    text-align: center;
+    border-radius: 2px;
+    background: #576c85;
+    font-size: 10px;
+    position: absolute;
+    top: -10px;
+    display: none;
+}
+
+#music_box .musicFuncList{
+    height: 20px; 
+    display: flex; 
+    margin-top: 15px;
+}
+
+#music_box .musicFuncList li{
+    width: 25px; 
+    height: 100%;
+}
+
+#music_box .musicFuncList li:first-of-type{
+    width: 80px;
+}
+
+#music_box .musicFuncList li:nth-of-type(2){
+    width: 25px; 
+    height: 25px; 
+    margin-left: 10px;
+}
+
+#music_box .musicFuncList li #playOrder{
+    width: 100%; 
+    height: 100%; 
+    background: url(../img/playbar.png); 
+    cursor: pointer;
+}
+
+#music_box .musicFuncList li #playOrder.order{
+    background-position: -3px -344px;
+}
+
+#music_box .musicFuncList li #playOrder.order:hover{
+    background-position: -33px -344px;
+}
+
+#music_box .musicFuncList li #playOrder.random{
+    background-position: -65px -248px;
+}
+
+#music_box .musicFuncList li #playOrder.random:hover{
+    background-position: -92px -248px;
+}
+
+#music_box .musicFuncList li #playOrder.singleCycle{
+    background-position: -66px -344px;
+}
+
+#music_box .musicFuncList li #playOrder.singleCycle:hover{
+    background-position: -93px -344px;
+}
+
+#music_box .musicFuncList li .volume_pic{
+    display: inline-block; 
+    width: 25px; 
+    height: 100%; 
+    background: url(../img/playbar.png); 
+    background-position: -2px -248px; 
+    vertical-align: middle; 
+    position: relative; 
+    top: 2px; 
+    cursor: pointer;
+}
+
+#music_box .musicFuncList li #volume{
+    -webkit-appearance: none; 
+    border-radius: 5px; 
+    height: 3px; 
+    width: 50px; 
+    outline: none;
+}
+
+#music_box .musicFuncList li #volume::-webkit-slider-thumb{
+    -webkit-appearance: none; 
+    width: 10px; 
+    height: 10px; 
+    background: white; 
+    border-radius: 50%;
+}
+
+
+/* 自定义播放器（大） */
+.bfq{
+    background:  linear-gradient(to right, #141e30, #243b55); 
+    height: 100%; 
+    z-index: 100; 
+    position: fixed; 
+    top: 0; 
+    display: none;
+}
+
+#AudioHtml{
+    width: 1200px; 
+    height: 580px; 
+    margin: 10px auto; 
+    background: #576c85; 
+    border-radius: 10px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    overflow: hidden; 
+    z-index: 100; 
+    display: none;
+}
+
+#AudioHtml .top{
+    color: white; 
+    width: 100%; 
+    height: 50px; 
+    background: rgb(38, 49, 56); 
+    text-align: center; 
+    line-height: 50px;
+}
+
+#AudioHtml .top span{
+    color: black; 
+    width: 20px; 
+    height: 20px; 
+    margin: 10px; 
+    background: rgb(137, 147, 153); 
+    text-align: center; 
+    line-height: 20px; 
+    cursor: pointer;
+}
+
+#AudioHtml .left{
+    width: 40%; 
+    height: 480px; 
+    display: inline-block; 
+    overflow: hidden;
+}
+
+#AudioHtml .left .AudioHtmlImg{
+    width: 330px; 
+    height: 330px; 
+    border-radius: 50%; 
+    margin: 50px auto; 
+    background: url(../img/default_album.jpg); 
+    background-size: 330px 330px; 
+    animation: play 5s infinite linear;
+}
+
+#AudioHtml .right{
+    width: 60%; 
+    height: 480px; 
+    display: inline-block; 
+    position: relative;
+}
+
+#AudioHtml .right .lrcBox{
+    width: 580px; 
+    height: 380px; 
+    margin: 15px; 
+    background: rgba(0,0,0, 0.5); 
+    box-sizing: border-box; 
+    border-top: 10px solid rgba(0,0,0,0);
+    border-bottom: 20px solid rgba(0,0,0,0);
+    padding: 10px 0;
+    text-align: center; 
+    overflow-y: scroll;
+}
+
+#AudioHtml .right .lrcBox .lrcText{
+    width: 100%; 
+    height: 100%;
+}
+
+#AudioHtml .right .lrcBox .lrcText p{
+    color: white; 
+    font-size: 14px; 
+    margin-top: 10px; 
+    letter-spacing: 2px;
+}
+
+#AudioHtml .right .lrcBox .lrcText p:first-of-type{
+    margin-top: 168px;
+}
+
+#AudioHtml .right .lrcBox .lrcText p:last-of-type{
+    margin-bottom: 180px;
+}
+
+#AudioHtml .right .lrcBox .funcBtn{
+    width: 20px; 
+    height: 20px; 
+    color: white; 
+    position: absolute; 
+    cursor: pointer;
+}
+
+#AudioHtml .right .lrcBox .lrcTimePre{
+    top: 160px; 
+    right: 90px; 
+    border: 1px solid lightblue;
+}
+
+#AudioHtml .right .lrcBox .lrcTimeAft{
+    top: 200px; 
+    right: 90px; 
+    border: 1px solid lightblue;
+}
+
+
+#AudioHtml .right .lrcBox .curTimePre{
+    bottom: 60px; 
+    left: -20px; 
+    border: 1px solid white;
+}
+
+#AudioHtml .right .lrcBox .curTimeAft{
+    bottom: 60px; 
+    right: 90px; 
+    border: 1px solid white;
+}
+
+/* 去除歌词的滚动条 */
+#AudioHtml .right .lrcBox::-webkit-scrollbar{
+    display: none;
+}
+
+#AudioHtml #music_box{
+    width: 100%; 
+    height: 70px; 
+    background: black; 
+    position: relative; 
+    display: flex; 
+}
+

@@ -1,0 +1,487 @@
+/* 我的音乐界面 */
+.page2{
+    min-width: 970px; 
+    display: none; 
+    overflow: hidden; 
+    background: linear-gradient(to right, #141e30, #243b55); 
+    color: white;
+}
+
+/* 未登录 */
+/* .page2 .notLogin{width: 100%;} */
+.page2 .notLogin .notice{
+    width: 500px; 
+    margin: 100px auto; 
+    text-align: center;
+}
+
+.page2 .notLogin .notice h1{
+    color: white;
+}
+
+.page2 .notLogin .pleaseLoginBtn{
+    width: 50px; 
+    height: 30px; 
+    text-align: center; 
+    line-height: 30px; 
+    cursor: pointer; 
+    margin: 100px auto; 
+    background: lightcoral;
+}
+
+/* 已登录 */
+.page2 .hasLogin{
+    height: 100%; 
+    display: flex;
+}
+
+.page2 .hasLogin .MyMusicLeft{
+    width: 200px; 
+    overflow: hidden; 
+    margin: 0 10px;
+}
+
+.page2 .hasLogin .MyMusicLeft .PlayList{
+    margin-top: 80px; 
+    width: 180px; 
+    background: lightslategray; 
+    padding: 5px;
+}
+
+.page2 .hasLogin .MyMusicLeft .PlayList .PlayListTitle{
+    width: 100%; 
+    height: 20px; 
+    line-height: 20px;
+}
+
+.page2 .hasLogin .MyMusicLeft .PlayList .PlayListTitle .newIcon{
+    display: inline-block; 
+    width: 40px; 
+    height: 100%; 
+    border: 1px gray solid; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    text-align: center; 
+    cursor: pointer; 
+    background: #243b55;
+}
+
+.page2 .hasLogin .MyMusicLeft .PlayList .myPlayList{
+    width: 100%; 
+    margin-top: 10px;
+}
+
+.page2 .hasLogin .MyMusicLeft .PlayList .myPlayList li{
+    width: 100%; 
+    height: 50px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    margin: 5px 0; 
+    cursor: pointer;
+}
+
+.page2 .hasLogin .MyMusicLeft .PlayList .myPlayList li .myPlayListPic{
+    width: 50px; 
+    height: 100%;
+}
+
+.page2 .hasLogin .MyMusicLeft .PlayList .myPlayList li .playListNameBox{
+    width: 120px; 
+    margin-left: 10px; 
+    height: 100%;
+}
+
+.page2 .hasLogin .MyMusicLeft .PlayList .myPlayList li .playListNameBox .playListName{
+    font-size: 14px; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.page2 .hasLogin .MyMusicLeft .PlayList .myPlayList li .playListNameBox .playListSongNumBox{
+    width: 100%; 
+    height: 12px; 
+    margin-top: 10px; 
+    font-size: 12px;}
+
+.page2 .hasLogin .MyMusicRight{
+    width: 770px; 
+    box-sizing: border-box; 
+    padding: 0 30px; 
+    margin: 0 20px; 
+    border-left: 2px solid lightblue; 
+    overflow: hidden;
+}
+
+/* 歌单详情 */
+.page2 .hasLogin .MyMusicRight .playListDetail{
+    width: 100%; 
+    height: 180px; 
+    margin-top: 80px; 
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.page2 .hasLogin .MyMusicRight .playListDetail .page2PlayListPic{
+    width: 160px; 
+    height: 160px; 
+    margin-right: 50px;
+}
+
+.page2 .hasLogin .MyMusicRight .playListDetail .MyPlayListInfo{
+    width: 400px;
+}
+
+.page2 .hasLogin .MyMusicRight .playListDetail .myPlayListName{
+    margin-bottom: 20px;
+}
+
+.page2 .hasLogin .MyMusicRight .playListDetail .MyPlayListInfo .MyMusicUserImg{
+    display: inline-block; 
+    width: 30px; 
+    height: 30px; 
+    vertical-align: middle; 
+    margin-right: 10px;
+}
+
+.page2 .hasLogin .MyMusicRight .playListDetail .MyPlayListInfo .createTime{
+    margin-left: 10px; 
+    font-size: 12px;
+}
+
+.MyMusicFuncList{
+    width: 280px; 
+    display: flex; 
+    justify-content: space-between; 
+    color: #243b55; 
+    font-size: 14px; 
+    margin-top: 20px;
+}
+
+.MyMusicFuncList li{
+    display: inline-block; 
+    width: 40px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-align: center; 
+    line-height: 20px; 
+    border: 1px solid gray; 
+    background: lightblue;
+}
+
+.playSongsListBox{
+    width: 100%;
+}
+
+/* 右边标题 */
+.MyMusicRightTitle{
+    width: 100%; 
+    height: 30px; 
+    line-height: 30px; 
+    margin-bottom: 10px; 
+    border-bottom: 2px solid lightblue;
+}
+
+.MyMusicRightTitle .title{
+    font-size: 24px;
+}
+
+.MyMusicRightTitle span:not(:first-of-type){
+    font-size: 12px;
+}
+
+.MyMusicRightTitle .songNum{
+    margin-left: 10px;
+}
+
+/* 歌曲列表 */
+.playSongsListBox .Songsdetail{
+    width: 100%; 
+    height: 30px; 
+    border-bottom: 1px solid gray; 
+    box-shadow: 0 0 5px gray; 
+    display: flex; 
+    line-height: 30px;
+}
+
+.playSongsListBox .songName{
+    height: 100%; 
+    width: 310px; 
+    border-left: 1px solid gray; 
+    cursor: pointer; 
+    box-sizing: border-box; 
+    padding-left: 5px;
+}
+
+.playSongsListBox .SongLength{
+    height: 30px; 
+    width: 100px; 
+    position: relative; 
+    box-sizing: border-box; 
+    padding-left: 5px;
+}
+
+.playSongsListBox .songLength{
+    width: 100%; 
+    height: 100%;
+}
+
+.playSongsListBox .SongLength .listFunction{
+    width: 100%; 
+    left: 0; 
+    position: absolute; 
+    right: 10px; 
+    top: 6px; 
+    display: none;
+}
+
+.playSongsListBox .SongLength .listFunction  li{
+    width: 18px; 
+    height: 18px; 
+    background: url(../img/icon.png); 
+    cursor: pointer;
+}
+
+.playSongsListBox .SongLength .listFunction  li:first-of-type{
+    background-position: 0 -698px;
+}
+
+.playSongsListBox .SongLength .listFunction  li:first-of-type:hover{
+    background-position: -22px -698px;
+}
+
+.playSongsListBox .SongLength .listFunction  li:nth-of-type(2){
+    background-position: -44px -86px; 
+    margin-right: 2px;
+}
+
+.playSongsListBox .SongLength .listFunction  li:nth-of-type(2):hover{
+    background-position: -44px -109px;
+}
+
+.playSongsListBox .SongLength .listFunction  li:nth-of-type(3){
+    background-position: -44px -136px;
+}
+
+.playSongsListBox .SongLength .listFunction  li:nth-of-type(3):hover{
+    background-position: -44px -159px;
+}
+
+.playSongsListBox .SongLength .listFunction  li:nth-of-type(4){
+    background: url(../img/table.png); 
+    background-position: -79px -173px;
+}
+
+.playSongsListBox .SongLength .listFunction  li:nth-of-type(4):hover{
+    background-position: -102px -173px;
+}
+
+.playSongsListBox .SongLength .listFunction li:last-of-type{
+    background: url(../img/table.png) 0 -216px; 
+    margin-left: 5px;
+}
+
+.playSongsListBox .SongLength .listFunction li:last-of-type:hover{
+    background-position: -20px -216px;
+}
+
+.playSongsListBox .Singer{
+    height: 100%; 
+    width: 100px; 
+    box-sizing: border-box; 
+    padding-left: 5px; 
+    cursor: pointer;
+}
+
+.playSongsListBox .Album{
+    height: 100%; 
+    width: 100px; 
+    box-sizing: border-box; 
+    padding-left: 5px; 
+    cursor: pointer;
+}
+
+.playSongsListBox .Songsdetail .songName{
+    margin-left: 60px;
+}
+
+.playSongsListBox .Songsdetail .SongLength{
+    border-left: 1px solid gray;
+}
+
+.playSongsListBox .Songsdetail .Singer{
+    border-left: 1px solid gray;
+}
+
+.playSongsListBox .Songsdetail .Album{
+    border-left: 1px solid gray;
+}
+
+.playSongsList{
+    width: 100%; 
+    color: black;
+}
+
+.playSongsList li div{
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.playSongsList li{
+    display: flex; 
+    background: white; 
+    font-size: 14px; 
+    width: 100%; 
+    line-height: 30px; 
+    overflow: hidden;
+}
+
+.playSongsList li:hover .SongLength .songLength{
+    display: none;
+}
+
+.playSongsListBox .playSongsList li:hover .SongLength .listFunction{
+    display: flex;
+}
+
+.ListHead{
+    width: 60px;
+}
+
+.ListHead .songOrder{
+    margin-left: 5px;
+}
+
+.ListHead .palyIcon{
+    display: inline-block; 
+    width: 18px; 
+    height: 18px; 
+    margin: 6px; 
+    background: url(../img/table.png) 0 -103px; 
+    cursor: pointer;
+}
+
+/* 评论 */
+.page2 .hasLogin .MyMusicRight .MyCommentBox{
+    width: 100%; 
+    margin-top: 100px;
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .MyComment{
+    width: 100%; 
+    display: flex; 
+    flex-wrap: wrap; 
+    position: relative; 
+    height: 170px;
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox #MyCommentImg{
+    width: 50px; 
+    height: 50px; 
+    margin: 10px; 
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .MyCommentImg{
+    width: 50px; 
+    height: 50px; 
+    margin: 10px; 
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .MyComment .MyCommentText{
+    display: inline-block; 
+    outline: none; 
+    resize: none; 
+    box-sizing: border-box; 
+    padding: 10px; 
+    width: 560px; 
+    height: 100px; 
+    margin: 10px; 
+    border: 1px solid gray; 
+    border-radius: 5px;
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .MyComment #MyCommentImg::after{
+    content: "◂"; 
+    font-size: 30px; 
+    color: white; 
+    position: relative; 
+    left: 55px; 
+    top: 10px;
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .MyComment .sentComment{
+    width: 80px; 
+    height: 30px; 
+    background: lightblue; 
+    border-radius: 5px; 
+    position: absolute; 
+    right: 30px; 
+    bottom: 10px; 
+    text-align: center; 
+    line-height: 30px;
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox{
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 0 10px;
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentTitle{
+    width: 100%; 
+    border-bottom: 2px solid lightblue;
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList{
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li{
+    display: flex; 
+    width: 100%; 
+    height: 70px; 
+    font-size: 12px; 
+    position: relative;
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li .newCommentTextBox{
+    margin-top: 10px;
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li .newCommentTextBox .newCommentUserName{
+    color: lightblue;
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li .newCommentTextBox .newCommentText{
+    display: inline-block; 
+    width: 400px;
+    height: 18px; 
+    line-height: 26px; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li .newCommentTextBox .commentFoot{
+    position: absolute; 
+    width: 560px; 
+    bottom: 10px;
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li .newCommentTextBox .commentFoot .newCommentFunc .reply{
+    border-left: 1px solid gray; 
+    padding-left: 5px; 
+    margin-left: 5px;
+}
+
+.page2 .hasLogin .MyMusicRight .MyCommentBox .newCommentBox .newCommentList li .newCommentTextBox .commentFoot .newCommentFunc .like{
+    display: inline-block; 
+    width: 18px; 
+    height: 16px; 
+    background: url(../img/playbar.png) -64px -506px; 
+    vertical-align: bottom; 
+    margin-left: 5px; 
+    cursor: pointer;
+}

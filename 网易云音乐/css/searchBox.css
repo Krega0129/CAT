@@ -1,0 +1,67 @@
+/* 搜索结果 */
+.searchResultBox{
+    width: 100%; 
+    height: 100%; 
+    min-height: 600px; 
+    background: #243b55; 
+    overflow: hidden; 
+    display: none; 
+    position: relative;
+}
+
+#closesearchResultBox{
+    width: 20px; 
+    height: 20px; 
+    text-align: center; 
+    line-height: 20px; 
+    background: lightblue; 
+    color: black;
+    border: 1px solid gray; 
+    cursor: pointer; 
+    position: absolute; 
+    top: -50px; 
+    right: -50px;
+}
+
+.searchResultBox .searchResult{
+    width: 800px; 
+    margin: 150px auto; 
+    position: relative;
+    color: white;
+}
+
+.searchResultBox .searchResult .Songsdetail{
+    margin-top: 10px;
+}
+
+.searchResultBox .searchResult .Songsdetail .songName{
+    width: 380px;
+}
+
+.searchResultBox .searchResult .Songsdetail .Singer{
+    width: 120px;
+}
+
+.searchResultBox .searchResult .Songsdetail .Album{
+    width: 160px;
+}
+
+.searchResultBox .searchResult .searchResultList{
+    width: 100%; 
+}
+
+.searchResultBox .searchResult .searchResultList li{
+    width: 100%;
+}
+
+.searchResultBox .searchResult .searchResultList li .songName{
+    width: 380px;
+}
+
+.searchResultBox .searchResult .searchResultList li .Singer{
+    width: 120px;
+}
+
+.searchResultBox .searchResult .searchResultList li .Album{
+    width: 160px;
+}

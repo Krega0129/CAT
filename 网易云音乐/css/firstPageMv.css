@@ -1,0 +1,86 @@
+/* MV */
+#main .r_main .singer{
+    width: 100%; 
+    border-top: 2px solid #979797;
+}
+
+#main .r_main .com_box{
+    width: 208px; 
+    margin: 0 auto; 
+    overflow: hidden;
+}
+
+#main .r_main .com_box .r_main_head{
+    height: 38px; 
+    width: 100%; 
+    border-bottom: 1px solid #cfcfcf;
+    font-size: 12px; 
+    box-sizing: border-box; 
+    padding-top: 10px; 
+    line-height: 28px;
+}
+
+#main .r_main .com_box .r_main_head a{
+    color: #979797;
+}
+
+#main .r_main .com_box a:hover{
+    text-decoration: underline;
+}
+
+#main .r_main .Mv .Mv_box .Mv_list{
+    width: 180px; 
+    margin: 0 auto;
+}
+
+#main .r_main .Mv .Mv_box .Mv_list li{
+    width: 100%; 
+    height: 100px; 
+    background: #fafafa; 
+    margin-top: 13px; 
+    overflow: hidden; 
+    position: relative;
+}
+
+#main .r_main .Mv .Mv_box .Mv_list li a{
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, .4); 
+    overflow: hidden; 
+    display: none;
+}
+
+#main .r_main .Mv .Mv_box .Mv_list li a .MvPlay{
+    width: 32px; 
+    height: 32px; 
+    margin: 24px auto; 
+    border-radius: 50%; 
+    background-image: url(../img/playbar.png); 
+    background-position: -2px -206px;
+}
+
+#main .r_main .Mv .Mv_box .Mv_list li .details{
+    width: 100%; 
+    height: 20px; 
+    background: rgba(0, 0, 0, .5); 
+    position: absolute; 
+    bottom: 0; 
+    font-size: 12px; 
+    color: white; 
+    line-height: 20px; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    box-sizing: border-box; 
+    padding-left: 5px;
+}
+
+
+#main .r_main .Mv .Mv_box .Mv_list li:hover a{
+    display: block;
+}
+
+#main .r_main .Mv .Mv_box .Mv_list li a .MvPlay:hover{
+    box-shadow: 0 0 10px white;
+}

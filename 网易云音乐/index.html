@@ -4,7 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>网易云音乐</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/firstPage.css">
+    <link rel="stylesheet" href="./css/firstPageHot.css">
+    <link rel="stylesheet" href="./css/firstPageSinger.css">
+    <link rel="stylesheet" href="./css/firstPageTop.css">
+    <link rel="stylesheet" href="./css/firstPageMv.css">
+    <link rel="stylesheet" href="./css/firstPageRadio.css">
+    <link rel="stylesheet" href="./css/foot.css">
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/musicBox.css">
+    <link rel="stylesheet" href="./css/myMusicPage.css">
+    <link rel="stylesheet" href="./css/searchBox.css">
+    <link rel="stylesheet" href="./css/userHome.css">
 </head>
 <body>
     <div id="head_logo_box">
@@ -12,26 +26,33 @@
             <div class="head_logo"></div>
         </div>
     </div>
+    <div class="logout">退出登录</div>
     <div id="head" class="container_fluid">
         <div class="head_nav">
             <ul class="head_menu">
                 <li class="active" id="firstPage">
                     <a href="#">发现音乐</a>
+                    <span class="tri">▲</span>
                 </li>
                 <li id="MyMusic">
                     <a href="#">我的音乐</a>
+                    <span class="tri">▲</span>
                 </li>
                 <li>
                     <a href="#">朋友</a>
+                    <span class="tri">▲</span>
                 </li>
                 <li>
                     <a href="#">商城</a>
+                    <span class="tri">▲</span>
                 </li>
                 <li>
                     <a href="#">音乐人</a>
+                    <span class="tri">▲</span>
                 </li>
                 <li>
                     <a href="#">下载客户端</a>
+                    <span class="tri">▲</span>
                 </li>
             </ul>
             <div class="inp">
@@ -48,7 +69,7 @@
                         <a href=""><dd></dd></a>
                         <a href=""><dd></dd></a>
                     </dl>
-                    <dl class="search_list">
+                    <dl class="search_list clear">
                         <dt>Mv</dt>
                         <a href=""><dd></dd></a>
                         <a href=""><dd></dd></a>
@@ -65,11 +86,11 @@
         <div class="sec_nav container_fluid">
             <div class="nav_box container">
                 <ul id="sec_nav_list">
-                    <li class="active"><a href="#">推荐</a></li>
-                    <li><a href="#">排行榜</a></li>
-                    <li><a href="#">歌单</a></li>
-                    <li><a href="#">主播电台</a></li>
-                    <li><a href="#">歌手</a></li>
+                    <li class="active"><a href="#hotSign">热门推荐</a></li>
+                    <li><a href="#singerSign">歌手</a></li>
+                    <li><a href="#topSign">排行榜</a></li>
+                    <li><a href="#MvSign">Mv</a></li>
+                    <li><a href="#anchorSign">电台</a></li>
                     <li><a href="#">新碟</a></li>
                 </ul>
             </div>
@@ -124,126 +145,476 @@
         <div id="main_bg" class="container_fluid">
             <div id="main" class="container">
                 <div class="l_main">
-                    <div class="hot common_box">
+                    <div id="hotSign" class="sign"></div>
+                    <div class="hot common_box" id="hot">
                         <div class="hot_head common_head clear">
                             <b class="l"><a href="#">热门推荐</a></b>
                             <ul class="hot_head_list l">
-                                <li><a href="#">华语</a></li>
-                                <li><a href="#">流行</a></li>
-                                <li><a href="#">摇滚</a></li>
-                                <li><a href="#">民谣</a></li>
-                                <li><a href="#">电子</a></li>
+                                <li>华语</li>
+                                <li>欧美</li>
+                                <li>流行</li>
+                                <li>民谣</li>
+                                <li>摇滚</li>
                             </ul>
                             <span class="r"><a href="#">更多</a></span>
                         </div>
-                        <ul class="hot_list" id="hotList">
-                            <li>
-                                <div class="hot_box">
-                                    <div class="img_box">
-                                        <div class="box_img"></div>
-                                    </div>
-                                    <div class="listener">
-                                        <i class="earphone"></i>
-                                        <span class="num">4316万</span>
-                                        <i href="#" class="play r"></i>
-                                    </div>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="hot_box">
-                                    <div class="img_box">
-                                        <div class="box_img"></div>
-                                    </div>
-                                    <div class="listener">
-                                        <i class="earphone"></i>
-                                        <span class="num">4316万</span>
-                                        <i href="#" class="play r"></i>
-                                    </div>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="hot_box">
-                                    <div class="img_box">
-                                        <div class="box_img"></div>
-                                    </div>
-                                    <div class="listener">
-                                        <i class="earphone"></i>
-                                        <span class="num">4316万</span>
-                                        <i href="#" class="play r"></i>
-                                    </div>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="hot_box">
-                                    <div class="img_box">
-                                        <div class="box_img"></div>
-                                    </div>
-                                    <div class="listener">
-                                        <i class="earphone"></i>
-                                        <span class="num">4316万</span>
-                                        <i href="#" class="play r"></i>
-                                    </div>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="hot_box">
-                                    <div class="img_box">
-                                        <div class="box_img"></div>
-                                    </div>
-                                    <div class="listener">
-                                        <i class="earphone"></i>
-                                        <span class="num">4316万</span>
-                                        <i href="#" class="play r"></i>
-                                    </div>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="hot_box">
-                                    <div class="img_box">
-                                        <div class="box_img"></div>
-                                    </div>
-                                    <div class="listener">
-                                        <i class="earphone"></i>
-                                        <span class="num">4316万</span>
-                                        <i href="#" class="play r"></i>
-                                    </div>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="hot_box">
-                                    <div class="img_box">
-                                        <div class="box_img"></div>
-                                    </div>
-                                    <div class="listener">
-                                        <i class="earphone"></i>
-                                        <span class="num">4316万</span>
-                                        <i href="#" class="play r"></i>
-                                    </div>
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="hot_box">
-                                    <div class="img_box">
-                                        <div class="box_img"></div>
-                                    </div>
-                                    <div class="listener">
-                                        <i class="earphone"></i>
-                                        <span class="num">4316万</span>
-                                        <i href="#" class="play r"></i>
-                                    </div>
-                                    <p></p>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="hotBox">
+                            <div class="hotListBox">
+                                <ul class="hot_list">
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                </ul>
+                                <ul class="hot_list">
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                </ul>
+                                <ul class="hot_list">
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                </ul>
+                                <ul class="hot_list">
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                </ul>
+                                <ul class="hot_list">
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <div class="hot_box">
+                                            <div class="img_box">
+                                                <div class="box_img"></div>
+                                                <div class="p">
+                                                    <div class="play"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="singers common_box">
+                    <div id="singerSign" class="sign"></div>
+                    <div class="singers common_box" id="singers">
                         <div class="common_head">
                             <b class="l"><a href="#">推荐歌手</a></b>
                             <ul id="singersList" class="hot_head_list l">
@@ -272,7 +643,7 @@
                                     <div class="list_box">
                                         <a href="#">
                                             <div class="img"></div>
-                                            <p>毛不易</p>
+                                            <p>张国荣</p>
                                         </a>
                                     </div>
                                     <div class="list_box">
@@ -322,7 +693,7 @@
                                     <div class="list_box">
                                         <a href="#">
                                             <div class="img"></div>
-                                            <p>高黎康治</p>
+                                            <p>米津玄师</p>
                                         </a>
                                     </div>
                                     <div class="list_box">
@@ -334,7 +705,7 @@
                                     <div class="list_box">
                                         <a href="#">
                                             <div class="img"></div>
-                                            <p>IU</p>
+                                            <p>高黎康治</p>
                                         </a>
                                     </div>
                                     <div class="list_box">
@@ -385,7 +756,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="top common_box">
+                    <div id="topSign" class="sign"></div>
+                    <div class="top common_box" id="top">
                         <div class="common_head">
                             <b class="l"><a href="#">榜单</a></b>
                             <span class="r"><a href="#">更多</a></span>
@@ -792,7 +1164,8 @@
                         <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
                         <div class="download"><a href="#"></a></div>
                     </div>
-                    <div class="Mv">
+                    <div id="MvSign" class="sign"></div>
+                    <div class="Mv" id="Mv">
                         <div class="Mv_box com_box">
                             <div class="r_main_head">
                                 <b>推荐Mv</b>
@@ -826,7 +1199,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="anchor">
+                    <div id="anchorSign" class="sign"></div>
+                    <div class="anchor" id="anchor">
                         <div class="anchor_box com_box">
                             <div class="r_main_head">
                                 <b>热门电台</b>
@@ -882,7 +1256,7 @@
         </div>
     </div>
     <div class="page2 container_fluid">
-        <div class="notLogin">
+        <div class="notLogin container">
             <div class="notice">
                 <h1>您还没登录，请登录后再查看</h1>
             </div>
@@ -976,26 +1350,25 @@
                         <span class="songNum">共0条评论</span>
                     </div>
                     <div class="MyComment">
-                        <div class="MyCommentImg"></div>
+                        <div id="MyCommentImg"></div>
                         <textarea class="MyCommentText"></textarea>
                         <div class="sentComment">发送评论</div>
                     </div>
                     <div class="newCommentBox">
                         <div class="newCommentTitle">
-                            <b>最新评论（<span class="newCommentNum">1</span>）</b>
+                            <b>最新评论（<span class="newCommentNum">0</span>）</b>
                         </div>
                         <ul class="newCommentList">
                             <li>
                                 <div class="MyCommentImg"></div>
                                 <div class="newCommentTextBox">
-                                    <span class="newCommentUserName">19120333220：</span>
-                                    <span class="newCommentText">评论</span>
+                                    <span class="newCommentUserName"></span>
+                                    <span class="newCommentText"></span>
                                     <div class="commentFoot">
-                                        <span class="commentSentTime l">刚刚</span>
+                                        <span class="commentSentTime l"></span>
                                         <div class="newCommentFunc r">
-                                            <span class="deleteComment">删除</span>
                                             <i class="like" id="like"></i>
-                                            (<span class="likeNum">1</span>)
+                                            (<span class="likeNum"></span>)
                                             <span class="reply">回复</span>
                                         </div>
                                     </div>
@@ -1071,7 +1444,7 @@
                 <span class="title">我创建的歌单(<span class="songSheetNum">1</span>)</span>
             </div>
             <ul class="SongSheetList" id="mySongSheetList">
-                <li>
+                <li class="SongSheetLis">
                     <div class="songSheetPic"></div>
                     <p class="songSheetInfo">歌单介绍</p>
                 </li>
@@ -1082,7 +1455,7 @@
                 <span class="title">我收藏的歌单(<span class="songSheetNum">1</span>)</span>
             </div>
             <ul class="SongSheetList" id="collectSongSheetList">
-                <li>
+                <li class="SongSheetLis">
                     <div class="songSheetPic"></div>
                     <p class="songSheetInfo">歌单介绍</p>
                 </li>
@@ -1090,8 +1463,8 @@
         </div>
     </div>
     <div class="searchResultBox">
-        <div id="closesearchResultBox">X</div>
         <div class="searchResult">
+            <div id="closesearchResultBox">X</div>
             <b class="searchSongName"></b><span>搜索结果：<span class="searchResultNum"></span>首歌</span>
             <div class="playSongsListBox">
                 <div class="Songsdetail">
@@ -1179,6 +1552,8 @@
                     <div class="paswicon"></div>
                 </div>
                 <p id="pw_tip">密码错误,请检查后再重试!</p>
+                <p class="pwTypeErr">密码格式错误，请重新输入！</p>
+                <p class="pwNullTip">密码不能为空！</p>
                 <input type="checkbox" class="check"><span class="agree">是否同意<a href="">《协议》</a></span>
                 <div id="sub" class="log_btn">登录</div>
                 <span id="beNew" class="r">还没账号?点击注册&gt;&gt;</span>
@@ -1195,6 +1570,7 @@
                     <input type="password" class="inner password" id="pw_sure" placeholder="请确认你的密码">
                     <div class="paswicon"></div>
                 </div>
+                <p class="pwTypeErr">密码格式错误，请重新输入！</p>
                 <p id="pw_sure_tip">两次输入的密码不一致，请检查后重试！</p>
                 <input type="checkbox" class="check"><span class="agree">是否同意<a href="">《协议》</a></span>
                 <div id="reg_btn" class="log_btn"><a href="#">注册</a></div>
@@ -1225,6 +1601,10 @@
                     <div class="inbox">
                         <i class="inPro"></i>
                         <div class="proPoint"></div>
+                        <p id="timeTip">
+                            <span class="timeTipMin"></span>:
+                            <span class="timeTipSec"></span>
+                        </p>
                     </div>
                 </div>
                 <div class="time">
@@ -1264,6 +1644,28 @@
             </div>
         </div>
     </div>
+    <div class="verification">
+        <div class="closeVer">X</div>
+        <div class="verGoal"></div>
+        <div class="verMove"></div>
+        <div class="moveBar">
+            <div class="moveBtn">|||||</div>
+        </div>
+    </div>
+    <div class="verSuc">✔ 验证通过</div>
 </body>
-<script src="./js/index.js"></script>
+<script src="./js/tools.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/userHome.js"></script>
+<script src="./js/myMusicPage.js"></script>
+<script src="./js/banner.js"></script>
+<script src="./js/firstPage.js"></script>
+<script src="./js/login.js"></script>
+<script src="./js/firstPageHot.js"></script>
+<script src="./js/firstPageMv.js"></script>
+<script src="./js/firstPageRadio.js"></script>
+<script src="./js/firstPageSinger.js"></script>
+<script src="./js/firstPageTop.js"></script>
+<script src="./js/musicBox.js"></script>
+<script src="./js/search.js"></script>
 </html>
